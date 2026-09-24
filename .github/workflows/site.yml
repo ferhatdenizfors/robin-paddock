@@ -1,0 +1,81 @@
+# Robin Räikkönen Paddock - nightly automatic update (plain Python, no AI) + GitHub Pages deploy.
+#
+#  schedule / manual run : update (scripts/auto_update.py -> site/auto.js, data/auto_state.json)
+#                          -> commit & push if changed -> deploy
+#  push to main          : deploy only
+#
+# No loop: the commit pushed by the "update" job uses the workflow's GITHUB_TOKEN, and GitHub never
+# starts new workflow runs for pushes made with that token. The deploy job also ignores pushes made
+# by github-actions[bot] as a second guard.
+
+name: site
+
+on:
+  schedule:
+    - cron: '17 4 * * *'        # every night 04:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch new results, news and standings
+        run: python scripts/auto_update.py --verbose
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/auto.js data/auto_state.json
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git commit -m "Automaattinen päivitys $(date -u +%F)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+  deploy:
+    needs: update
+    # runs after a successful (or skipped) update; skipped when update failed or for the bot's own pushes
+    if: always() && !failure() && !cancelled() && !(github.event_name == 'push' && github.actor == 'github-actions[bot]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main              # the latest main, including the update job's commit
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate data.js and build dist/
+      %
