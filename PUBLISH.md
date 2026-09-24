@@ -1,6 +1,11 @@
 # Publicering – Robin Räikkönen Paddock
 
-## Claude-artefakt (huvudlänk)
+## Huvudsida (fristående)
+- https://ferhatdenizfors.github.io/robin-paddock/ – repo github.com/ferhatdenizfors/robin-paddock
+- Varje push till `main` publiceras automatiskt; varje natt 04:17 UTC körs `scripts/auto_update.py` (ingen AI).
+- OBS: den lokala GitHub-inloggningen saknar `workflow`-behörighet – ändringar i `.github/workflows/` görs i GitHubs webbredigerare.
+
+## Claude-artefakt (valfri kopia)
 - URL: https://claude.ai/artifact/Erts8j1ERbdy5Qtm9X6JFE
 - Sida: `site/index.html`. Tillhörande filer: `data.js`, `assets.js`, `assets/photos/*.jpg`, `assets/kart/gp-racing-kart.jpg`.
 - Delning görs från sidans Share-meny (artefakten är privat tills den delas).

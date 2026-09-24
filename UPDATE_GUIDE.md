@@ -1,4 +1,6 @@
-# Veckouppdatering – Robin Räikkönen Paddock
+# Kurerad uppdatering – Robin Räikkönen Paddock
+
+> Sidan uppdaterar sig själv varje natt (GitHub Actions → `site/auto.js`). Den här guiden gäller den valfria, djupare uppdateringen av `site/data.js`.
 
 Instruktioner för den schemalagda uppdateringen (och för manuella uppdateringar).
 
@@ -24,5 +26,5 @@ Instruktioner för den schemalagda uppdateringen (och för manuella uppdateringa
 4. Regler: bara verifierade fakta med källa; Robin är minderårig – bara offentlig idrottsinfo; finskan ska vara naturlig (huvudspråk), alla texter på fi/sv/en.
 5. Kör `python3 build.py --check` – måste sluta med `OK`.
 6. Publicera om artefakten till SAMMA länk (se `PUBLISH.md`) med `site/index.html` som sida och `data.js` som tillhörande fil.
-7. Om `dist/` är kopplad till GitHub Pages (se `PUBLISH.md`): committa och pusha.
+7. Committa och pusha `site/data.js` till GitHub (`git pull --rebase` först) – GitHub Actions publicerar sidan automatiskt.
 8. Hittades inget nytt: ändra ingenting och publicera inte om.
