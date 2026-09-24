@@ -78,4 +78,13 @@ jobs:
           python-version: '3.12'
 
       - name: Validate data.js and build dist/
-      %
+        run: python build.py --check
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
