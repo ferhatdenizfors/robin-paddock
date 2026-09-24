@@ -1,0 +1,1760 @@
+{
+ "rotax_italia": {
+  "apex": {
+   "https://www.rotaxmaxkart.it/info-point-rmci-7-ala-di-trento-20-09-2026/": "https://www.apex-timing.com/goracing/results.php?path=/ultratiming/2026/200926/&group=21"
+  },
+  "calendar": {
+   "2026": {
+    "checked": "2026-09-24",
+    "rounds": [
+     [
+      1,
+      "2026-03-08",
+      "Cremona"
+     ],
+     [
+      2,
+      "2026-04-12",
+      "Jesolo"
+     ],
+     [
+      3,
+      "2026-05-17",
+      "Franciacorta"
+     ],
+     [
+      4,
+      "2026-06-13",
+      "Lonato Nott."
+     ],
+     [
+      5,
+      "2026-07-05",
+      "Viterbo Mojo"
+     ],
+     [
+      6,
+      "2026-08-30",
+      "Castelletto"
+     ],
+     [
+      7,
+      "2026-09-20",
+      "Ala di Trento"
+     ],
+     [
+      8,
+      "2026-10-11",
+      "Franciacorta"
+     ]
+    ],
+    "url": "https://www.rotaxmaxkart.it/wp-content/uploads/2026/02/RMCI_INFO_Calendario_2026.pdf"
+   }
+  },
+  "last_class": "MINI",
+  "names": {
+   "BALLINARI|JULES": 1,
+   "BARBUTY|MILOS": 1,
+   "CECCARELLI|CORRADO MARIA": 1,
+   "GAZZETTI|ANDREA": 1,
+   "GP|RACING": 1,
+   "KK|KOPRIVNICA": 1,
+   "KRNJAJIC|MIHAIL": 1,
+   "MANGANELLI|CRISTIAN ROCCO": 1,
+   "MKC|MOTORSPORT": 1,
+   "MOLENDA|ERNEST": 1,
+   "OFFICIAL|RESULTS": 1,
+   "PACCHETTI|EDOARDO": 1,
+   "PAPAGEORGIOU|ANDREAS": 1,
+   "RAIKKONEN|ROBIN": 1,
+   "SERVELLO|GABRIELE": 1,
+   "TURBO|KEVIN": 1,
+   "YZEIRAJ|ROHAN": 1
+  }
+ },
+ "seen": {
+  "apex:/3mkevents/2022/rmcit": "done",
+  "apex:/3mkevents/2022/rmcit:1": "no-robin",
+  "apex:/3mkevents/2022/rmcit:2": "no-robin",
+  "apex:/3mkevents/2022/rmcit:3": "no-robin",
+  "apex:/3mkevents/2023/rmcit": "done",
+  "apex:/3mkevents/2023/rmcit:1": "no-robin",
+  "apex:/3mkevents/2023/rmcit:2": "no-robin",
+  "apex:/3mkevents/2023/rmcit:3": "no-robin",
+  "apex:/3mkevents/2024/rmcit": "done",
+  "apex:/3mkevents/2024/rmcit:1": "no-robin",
+  "apex:/3mkevents/2024/rmcit:2": "no-robin",
+  "apex:/3mkevents/2024/rmcit:3": "no-robin",
+  "apex:/3mkevents/2025/rmcit": "done",
+  "apex:/3mkevents/2025/rmcit:1": "robin",
+  "apex:/3mkevents/2025/rmcit:2": "no-robin",
+  "apex:/3mkevents/2025/rmcit:3": "no-robin",
+  "apex:/3mkevents/2026/rmcit": "done",
+  "apex:/3mkevents/2026/rmcit:1": "robin",
+  "apex:/3mkevents/2026/rmcit:2": "no-robin",
+  "apex:/3mkevents/2026/rmcit:3": "no-robin",
+  "apex:/korridas/2022/rgf2022": "done",
+  "apex:/korridas/2022/rgf2022:1": "no-robin",
+  "apex:/korridas/2022/rgf2022:15": "no-robin",
+  "apex:/korridas/2022/rgf2022:3": "no-robin",
+  "apex:/korridas/2022/rgf2022:7": "no-robin",
+  "apex:/korridas/2023/rgf2023": "done",
+  "apex:/korridas/2023/rgf2023:1": "no-robin",
+  "apex:/korridas/2023/rgf2023:3": "no-robin",
+  "apex:/korridas/2023/rgf2023:7": "no-robin",
+  "apex:/korridas/2024/rgf2024": "done",
+  "apex:/korridas/2024/rgf2024:1": "no-robin",
+  "apex:/korridas/2024/rgf2024:3": "no-robin",
+  "apex:/korridas/2024/rgf2024:7": "robin",
+  "apex:/korridas/2025/rgf2025": "done",
+  "apex:/korridas/2025/rgf2025:1": "no-robin",
+  "apex:/korridas/2025/rgf2025:3": "no-robin",
+  "apex:/korridas/2025/rgf2025:7": "no-robin",
+  "fia:2025_Campillos:ok-junior.xml": "not-entered",
+  "fia:2025_Cremona:academy-junior.xml": "not-entered",
+  "fia:2025_Cremona:ok-njunior.xml": "not-entered",
+  "fia:2025_Kristianstad:ok-junior.xml": "not-entered",
+  "fia:2025_Mulsen:academy-junior.xml": "not-entered",
+  "fia:2025_Portimao:ok-junior.xml": "not-entered",
+  "fia:2025_Rodby:ok-junior.xml": "not-entered",
+  "fia:2025_Selangor-Kuala-Lumpur:arrive-and-drive-junior.xml": "not-entered",
+  "fia:2025_Valencia:academy-junior.xml": "not-entered",
+  "fia:2025_Viterbo:ok-junior.xml": "not-entered",
+  "fia:2026_Asum Ring - Kristianstad:junior.xml": "not-entered",
+  "fia:2026_Autodrom Slomczyn:junior.xml": "not-entered",
+  "fia:2026_Circuit of Macao - Coloane:junior.xml": "not-entered",
+  "fia:2026_Circuito Internazionale Napoli - Sarno-Napoli:academy-junior.xml": "not-entered",
+  "fia:2026_Karting Genk:academy-junior.xml": "not-entered",
+  "fia:2026_Kartodromo Internacional Lucas Guerrero - Chiva-Valencia:junior.xml": "not-entered",
+  "fia:2026_Motorsportarena Mulsen:junior.xml": "not-entered",
+  "fia:2026_World Circuit La Conca - Muro Leccese:junior.xml": "not-entered",
+  "https://www.apex-timing.com/goracing/results_download.php?pdf=results%2Fultratiming%2F2026%2F200926%2FMINI.pdf": "robin:1",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/05/2022RMC1Junior.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/05/2022RMC1Micro.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/05/2022RMC1Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/06/2022RMC2Junior.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/06/2022RMC2Micro.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/06/2022RMC2Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/07/2022RMC3Junior.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/07/2022RMC3Micro.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/07/2022RMC3Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/08/2022RMC4Junior.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/08/2022RMC4Micro.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/08/2022RMC4Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/08/2022RMC5Junior.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/08/2022RMC5Micro.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/08/2022RMC5Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/10/2022RMC6Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/10/2022RMC6Micro.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2022/10/2022RMC6Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/05/2023RMC1Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/05/2023RMC1Micro.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/05/2023RMC1Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/05/2023RMC2Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/05/2023RMC2Micro.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/05/2023RMC2Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/06/2023RMC3Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/06/2023RMC3Micro.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/06/2023RMC3Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/07/2023RMC4Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/07/2023RMC4Micro.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/07/2023RMC4Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/08/2023RMC5Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/08/2023RMC5Micro.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/08/2023RMC5Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/09/2023-RMC6-Wohlen-Rangliste-Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/09/2023-RMC6-Wohlen-Rangliste-Micro.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2023/09/2023-RMC6-Wohlen-Rangliste-Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/04/2024RMC1Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/04/2024RMC1Micro.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/04/2024RMC1Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/05/2024RMC2Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/05/2024RMC2Micro.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/05/2024RMC2Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/06/2024RMC3Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/06/2024RMC3Micro.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/06/2024RMC3Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/07/2024RMC4JUN.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/07/2024RMC4MIC.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/07/2024RMC4MIN.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/08/2024RMC5JUN.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/08/2024RMC5MIC.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/08/2024RMC5MIN.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/10/2024RMC6JUN.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/10/2024RMC6MIC.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2024/10/2024RMC6MIN.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/03/2025RMC1Junior.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/03/2025RMC1Micro.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/03/2025RMC1Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/04/2025RMC2Junior.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/04/2025RMC2Micro.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/04/2025RMC2Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/05/2025RMC3Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/05/2025RMC3Micro.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/05/2025RMC3Mini.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/06/2025RMC4Junior.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/06/2025RMC4Micro.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/06/2025RMC4Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/08/2025RMC5Junior.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/08/2025RMC5Micro.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/08/2025RMC5Mini.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/10/2025RMC6Junior.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/10/2025RMC6Micro.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2025/10/2025RMC6Mini.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/04/2026RMC1JUN.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/04/2026RMC1MIC.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/04/2026RMC1MIN.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/05/2026RMC2JUN.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/05/2026RMC2MIC.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/05/2026RMC2MIN.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/06/2026RMC3JUN.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/06/2026RMC3MIC.pdf": "robin-found-in-other-class",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/06/2026RMC3MIN.pdf": "robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/07/2026RMC4JUN.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/07/2026RMC4MIC.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/07/2026RMC4MIN.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/08/2026RMC5JUN.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/08/2026RMC5MIC.pdf": "no-robin",
+  "https://www.rotaxmax.ch/wp-content/uploads/2026/08/2026RMC5MIN.pdf": "no-robin",
+  "https://www.rotaxmaxkart.it/wp-content/uploads/2026/03/2026-RMCI-01-Cremona-MIN.pdf": "robin:1",
+  "https://www.rotaxmaxkart.it/wp-content/uploads/2026/04/2026-RMCI-02-Jesolo-all-results.pdf": "robin:2",
+  "https://www.rotaxmaxkart.it/wp-content/uploads/2026/05/2026-RMCI-03-ITA-FRA-Booklet-Rotax-Mini.pdf": "robin:3",
+  "https://www.rotaxmaxkart.it/wp-content/uploads/2026/06/2026-RMC-ITA-04-LON-Booklet-Rotax-Mini.pdf": "robin:2",
+  "https://www.rotaxmaxkart.it/wp-content/uploads/2026/07/2026-RMC-ITA-VIT-MIN.pdf": "robin:2",
+  "https://www.rotaxmaxkart.it/wp-content/uploads/2026/09/2026-RMCI-ITA-Castelletto-JUN.pdf": "no-robin",
+  "https://www.rotaxmaxkart.it/wp-content/uploads/2026/09/2026-RMCI-ITA-Castelletto-MIN.pdf": "mismatch:2026-09-24",
+  "https://www.wskarting.it/results/CC/2022/Round1/mini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/CC/2022/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/CC/2023/Round1/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/CC/2023/Round1/minigr3u10_participants_9.pdf": "wsk participants",
+  "https://www.wskarting.it/results/CC/2023/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/CC/2023/Round1/x30junior_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/CC/2024/Round1/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/CC/2024/Round1/minigr3u10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/CC/2024/Round1/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/CC/2024/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2022/Round1/mini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2022/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2022/Round2/mini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2022/Round2/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2023/Round1/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2023/Round1/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2023/Round1/ok-nok-njunior_participants_9.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2023/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2023/Round2/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2023/Round2/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2023/Round2/ok-nok-njunior_participants_7.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2023/Round2/okjunior_participants_11.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2024/Round1/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2024/Round1/miniu10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2024/Round1/okjunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2024/Round1/oknjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2024/Round2/OKNJ.pdf": "wsk booklet",
+  "https://www.wskarting.it/results/ES/2024/Round2/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2024/Round2/miniu10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2024/Round2/okjunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2024/Round2/okn-oknjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2025/Round1/minigr3_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2025/Round1/miniu10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2025/Round1/ok-n_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2025/Round1/ok-njunior_participants_4.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2025/Round1/okj_participants_12.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2025/Round2/minigr3_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2025/Round2/miniu10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2025/Round2/ok-n_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2025/Round2/ok-njunior_participants_4.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2025/Round2/okj_participants_12.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round1/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round1/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round1/ok-njunior_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round2/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round2/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round2/ok-njunior_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round2/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round3/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round3/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round3/ok-njunior_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/ES/2026/Round3/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2022/Round1/mini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2022/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2022/Round2/mini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2022/Round2/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2023/Round1/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2023/Round1/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2023/Round1/okjunior_participants_8.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2023/Round1/x30junior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2023/Round2/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2023/Round2/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2023/Round2/ok-njunior_participants_4.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2023/Round2/okjunior_participants_8.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2024/Round1/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2024/Round1/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2024/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2024/Round1/okn_participants_8.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2024/Round1/oknjunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2024/Round2/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2024/Round2/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2024/Round2/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2024/Round2/okn_participants_8.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2024/Round2/oknjunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round1/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round1/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round1/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round2/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round2/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round2/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round2/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round3/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round3/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round3/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2025/Round3/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2026/Round1/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2026/Round1/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2026/Round1/ok-njunior_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/FC/2026/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2022/Round1/mini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2022/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2022/Round2/mini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2022/Round2/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2022/Round3/mini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2022/Round3/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2022/Round4/mini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2022/Round4/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round1/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round1/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round2/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round2/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round2/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round3/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round3/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round3/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round4/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round4/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2023/Round4/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round1/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round1/minigr3u10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round1/oknjunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round2/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round2/minigr3u10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round2/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round2/oknjunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round3/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round3/minigr3u10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round3/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round3/oknjunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round4/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round4/minigr3u10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round4/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2024/Round4/oknjunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round1/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round1/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round1/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round2/U10.pdf": "wsk booklet",
+  "https://www.wskarting.it/results/MS/2025/Round2/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round2/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round2/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round2/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round3/U10.pdf": "wsk booklet",
+  "https://www.wskarting.it/results/MS/2025/Round3/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round3/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round3/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round3/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round4/U10.pdf": "wsk booklet",
+  "https://www.wskarting.it/results/MS/2025/Round4/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round4/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round4/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round4/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round5/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round5/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round5/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2025/Round5/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round1/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round1/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round1/ok-njunior_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round1/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round2/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round2/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round2/ok-njunior_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round2/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round3/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round3/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round3/ok-njunior_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round3/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round4/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round4/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round4/ok-njunior_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round4/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round5/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round5/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round5/ok-njunior_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/MS/2026/Round5/okjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round1/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round1/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round1/x30junior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round2/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round2/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round2/x30junior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round3/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round3/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round3/x30junior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round4/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round4/minigr3u10_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2023/Round4/ok-nok-njunior_participants_7.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2024/Round1/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2024/Round1/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2024/Round1/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2024/Round2/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2024/Round2/miniu10_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/OC/2024/Round2/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/SC/2022/Round1/mini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/SC/2023/Round1/minigr3_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/SC/2023/Round1/minigr3u10_participants_6.pdf": "wsk participants",
+  "https://www.wskarting.it/results/SC/2024/Round1/U10.pdf": "wsk booklet",
+  "https://www.wskarting.it/results/SC/2024/Round1/minigr3_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/SC/2024/Round1/miniu10_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/SC/2024/Round1/ok-njunior_participants_5.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2025/Round1/rotaxjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2025/Round1/rotaxmini_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2025/Round2/rotaxjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2025/Round2/rotaxmini_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2025/Round3/rotaxjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2025/Round3/rotaxmini_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2025/Round4/Mini.pdf": "wsk booklet",
+  "https://www.wskarting.it/results/rotax_euro/2025/Round4/rotaxjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2025/Round4/rotaxmini_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2026/Round1/BOOKMINI.pdf": "wsk booklet",
+  "https://www.wskarting.it/results/rotax_euro/2026/Round1/rotaxjunior_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2026/Round1/rotaxmini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2026/Round2/Mini.pdf": "wsk booklet",
+  "https://www.wskarting.it/results/rotax_euro/2026/Round2/rotaxjunior_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2026/Round2/rotaxmini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2026/Round3/rotaxjunior_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2026/Round3/rotaxmini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2026/Round4/rotaxjunior_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_euro/2026/Round4/rotaxmini_participants_1.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_winter/2025/Round1/rotaxjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_winter/2025/Round1/rotaxmini_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_winter/2025/Round2/rotaxjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_winter/2025/Round2/rotaxmini_participants_2.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_winter/2026/Round1/rotaxjunior_participants_3.pdf": "wsk participants",
+  "https://www.wskarting.it/results/rotax_winter/2026/Round1/rotaxmini_participants_2.pdf": "wsk participants",
+  "news:gpblog.com|/en/news/f1-today-red-bull-signs-raikkonen-junior-as-verstappen-lifts-lid-on-talks-with-rival-teams": "2026-09-09",
+  "news:gpblog.com|/en/news/from-kimi-to-jos-robin-raikkonens-journey-compared-with-max-verstappens": "2026-09-19",
+  "news:gpblog.com|/en/news/like-father-like-son-robin-raikkonen-joins-red-bull-driver-academy": "2026-09-09",
+  "news:gpblog.com|/en/news/raikkonens-son-linked-to-verstappens-path-as-tsunoda-makes-painful-red-bull-admission": "2026-09-19",
+  "news:gpblog.com|/en/rumors/red-bull-set-to-sign-kimi-raikkonens-son-robin-to-junior-programme-after-monza-visit": "2026-09-08",
+  "news:iltalehti.fi|0c88a857-5234-4920-8865-34290ff24ce4": "2026-09-09",
+  "news:is.fi|2000012255516": "2026-09-06",
+  "news:is.fi|2000012255570": "2026-09-06",
+  "news:is.fi|2000012266809": "2026-09-11",
+  "news:is.fi|2000012285636": "2026-09-20",
+  "rmci:2026:R1": "auto-rmc-italia-2026-03-08-rotax-mini-max",
+  "rmci:2026:R2": "auto-rmc-italia-2026-04-12-rotax-mini-max",
+  "rmci:2026:R3": "auto-rmc-italia-2026-05-17-rotax-mini-max",
+  "rmci:2026:R4": "auto-rmc-italia-2026-06-13-rotax-mini-max",
+  "rmci:2026:R5": "auto-rmc-italia-2026-07-05-rotax-mini-max",
+  "rmci:2026:R7": "auto-rmc-italia-2026-09-20-rotax-mini-max",
+  "rmcit-season:https://rmcit.3mkevents.com/en/results/season-17/rmcit-2022.html": "done",
+  "rmcit-season:https://rmcit.3mkevents.com/en/results/season-19/rmcit-2023.html": "done",
+  "rmcit-season:https://rmcit.3mkevents.com/en/results/season-22/rmcit-2024.html": "done",
+  "rmcit-season:https://rmcit.3mkevents.com/en/results/season-25/rmcit-2025.html": "done"
+ },
+ "wsk": {
+  "rounds": {
+   "2022:wsk_championscup:1": {
+    "classes": {
+     "MINI": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2022-01-23",
+    "url": "https://www.wskarting.it/results.asp?yy=2022&r=1&c=12&s=WSK_Championscup"
+   },
+   "2022:wsk_euroseries:1": {
+    "classes": {
+     "MINI": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2022-07-17",
+    "url": "https://www.wskarting.it/results.asp?yy=2022&r=1&c=12&s=wsk_euroseries"
+   },
+   "2022:wsk_euroseries:2": {
+    "classes": {
+     "MINI": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2022-07-31",
+    "url": "https://www.wskarting.it/results.asp?yy=2022&r=2&c=1&s=wsk_euroseries"
+   },
+   "2022:wsk_finalcup:1": {
+    "classes": {
+     "MINI": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2022-11-06",
+    "url": "https://www.wskarting.it/results.asp?yy=2022&r=1&c=1&s=WSK_Finalcup"
+   },
+   "2022:wsk_finalcup:2": {
+    "classes": {
+     "MINI": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2022-11-13",
+    "url": "https://www.wskarting.it/results.asp?yy=2022&r=2&c=12&s=WSK_Finalcup"
+   },
+   "2022:wsk_opencup:1": {
+    "fails": 1
+   },
+   "2022:wsk_supercup:1": {
+    "classes": {
+     "MINI": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results.asp?yy=2022&r=1&c=2&s=WSK_supercup"
+   },
+   "2022:wsk_supermasterseries:1": {
+    "classes": {
+     "MINI": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2022-01-30",
+    "url": "https://www.wskarting.it/results.asp?yy=2022&r=1&c=12&s=wsk_supermasterseries"
+   },
+   "2022:wsk_supermasterseries:2": {
+    "classes": {
+     "MINI": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2022-02-13",
+    "url": "https://www.wskarting.it/results.asp?yy=2022&r=2&c=12&s=wsk_supermasterseries"
+   },
+   "2022:wsk_supermasterseries:3": {
+    "classes": {
+     "MINI": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2022-03-06",
+    "url": "https://www.wskarting.it/results.asp?yy=2022&r=3&c=2&s=wsk_supermasterseries"
+   },
+   "2022:wsk_supermasterseries:4": {
+    "classes": {
+     "MINI": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2022-03-13",
+    "url": "https://www.wskarting.it/results.asp?yy=2022&r=4&c=1&s=wsk_supermasterseries"
+   },
+   "2023:wsk_championscup:1": {
+    "classes": {
+     "MINI Gr.3": {
+      "status": "absent"
+     },
+     "MINI Gr.3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "X30 Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-01-29",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=1&c=12&s=WSK_Championscup"
+   },
+   "2023:wsk_euroseries:1": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N/OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-09-03",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=1&c=16&s=wsk_euroseries"
+   },
+   "2023:wsk_euroseries:2": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N/OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-11-05",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=2&c=1&s=wsk_euroseries"
+   },
+   "2023:wsk_finalcup:1": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "X30 Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-11-19",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=1&c=12&s=WSK_Finalcup"
+   },
+   "2023:wsk_finalcup:2": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-11-26",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=2&c=16&s=WSK_Finalcup"
+   },
+   "2023:wsk_openseries:1": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "X30 Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-03-12",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=1&c=12&s=WSK_Openseries"
+   },
+   "2023:wsk_openseries:2": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "X30 Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-04-02",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=2&c=17&s=WSK_Openseries"
+   },
+   "2023:wsk_openseries:3": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "X30 Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-04-16",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=3&c=3&s=WSK_Openseries"
+   },
+   "2023:wsk_openseries:4": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "OK-N / OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-06-25",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=4&c=1&s=WSK_Openseries"
+   },
+   "2023:wsk_supercup:1": {
+    "classes": {
+     "MINI Gr. 3": {
+      "status": "absent"
+     },
+     "MINI Gr.3 U10": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=1&c=2&s=WSK_supercup"
+   },
+   "2023:wsk_supermasterseries:1": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-02-05",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=1&c=12&s=wsk_supermasterseries"
+   },
+   "2023:wsk_supermasterseries:2": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-02-19",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=2&c=16&s=wsk_supermasterseries"
+   },
+   "2023:wsk_supermasterseries:3": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-03-05",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=3&c=1&s=wsk_supermasterseries"
+   },
+   "2023:wsk_supermasterseries:4": {
+    "classes": {
+     "Mini Gr3": {
+      "status": "absent"
+     },
+     "Mini Gr3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2023-04-30",
+    "url": "https://www.wskarting.it/results.asp?yy=2023&r=4&c=17&s=wsk_supermasterseries"
+   },
+   "2024:wsk_championscup:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini Gr.3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-01-21",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=1&c=12&s=WSK_Championscup"
+   },
+   "2024:wsk_euroseries:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OKN Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-06-30",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=1&c=16&s=wsk_euroseries"
+   },
+   "2024:wsk_euroseries:2": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OKN - OKN Junior": {
+      "status": "absent"
+     },
+     "OKN Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-09-29",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=2&c=1&s=wsk_euroseries"
+   },
+   "2024:wsk_finalcup:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK N": {
+      "status": "absent"
+     },
+     "OKN Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-11-10",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=1&c=12&s=WSK_Finalcup"
+   },
+   "2024:wsk_finalcup:2": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK N": {
+      "status": "absent"
+     },
+     "OKN Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-11-24",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=2&c=17&s=WSK_Finalcup"
+   },
+   "2024:wsk_openseries:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-04-07",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=1&c=16&s=WSK_Openseries"
+   },
+   "2024:wsk_openseries:2": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-05-11",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=2&c=2&s=WSK_Openseries"
+   },
+   "2024:wsk_supercup:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "done"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-09-08",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=1&c=16&s=WSK_supercup"
+   },
+   "2024:wsk_supermasterseries:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini Gr.3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OKN Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-01-28",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=1&c=12&s=wsk_supermasterseries"
+   },
+   "2024:wsk_supermasterseries:2": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini Gr.3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OKN Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-02-11",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=2&c=17&s=wsk_supermasterseries"
+   },
+   "2024:wsk_supermasterseries:3": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini Gr.3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OKN Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-02-18",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=3&c=16&s=wsk_supermasterseries"
+   },
+   "2024:wsk_supermasterseries:4": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini Gr.3 U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OKN Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2024-03-02",
+    "url": "https://www.wskarting.it/results.asp?yy=2024&r=4&c=1&s=wsk_supermasterseries"
+   },
+   "2025:wsk_euroseries:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK - N": {
+      "status": "absent"
+     },
+     "OK- N Junior": {
+      "status": "absent"
+     },
+     "OKJ": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2025-05-17",
+    "url": "https://www.wskarting.it/results.asp?yy=2025&r=1&c=18&s=wsk_euroseries"
+   },
+   "2025:wsk_euroseries:2": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK - N": {
+      "status": "absent"
+     },
+     "OK- N Junior": {
+      "status": "absent"
+     },
+     "OKJ": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2025-07-05",
+    "url": "https://www.wskarting.it/results.asp?yy=2025&r=2&c=17&s=wsk_euroseries"
+   },
+   "2025:wsk_finalcup:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2025-10-26",
+    "url": "https://www.wskarting.it/results.asp?yy=2025&r=1&c=16&s=WSK_Finalcup"
+   },
+   "2025:wsk_finalcup:2": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2025-11-09",
+    "url": "https://www.wskarting.it/results.asp?yy=2025&r=2&c=17&s=WSK_Finalcup"
+   },
+   "2025:wsk_finalcup:3": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2025-11-23",
+    "url": "https://www.wskarting.it/results.asp?yy=2025&r=3&c=12&s=WSK_Finalcup"
+   },
+   "2025:wsk_supermasterseries:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2025-01-26",
+    "url": "https://www.wskarting.it/results.asp?yy=2025&r=1&c=2&s=wsk_supermasterseries"
+   },
+   "2025:wsk_supermasterseries:2": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "done"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2025-02-09",
+    "url": "https://www.wskarting.it/results.asp?yy=2025&r=2&c=1&s=wsk_supermasterseries"
+   },
+   "2025:wsk_supermasterseries:3": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "done"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2025-02-23",
+    "url": "https://www.wskarting.it/results.asp?yy=2025&r=3&c=12&s=wsk_supermasterseries"
+   },
+   "2025:wsk_supermasterseries:4": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "done"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2025-03-09",
+    "url": "https://www.wskarting.it/results.asp?yy=2025&r=4&c=16&s=wsk_supermasterseries"
+   },
+   "2025:wsk_supermasterseries:5": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2025-03-16",
+    "url": "https://www.wskarting.it/results.asp?yy=2025&r=5&c=18&s=wsk_supermasterseries"
+   },
+   "2026:wsk_euroseries:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2026-02-14",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=1&c=18&s=wsk_euroseries"
+   },
+   "2026:wsk_euroseries:2": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2026-04-18",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=2&c=12&s=wsk_euroseries"
+   },
+   "2026:wsk_euroseries:3": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2026-07-11",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=3&c=17&s=wsk_euroseries"
+   },
+   "2026:wsk_finalcup:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2026-08-30",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=1&c=16&s=WSK_Finalcup"
+   },
+   "2026:wsk_finalcup:2": {
+    "checked": "2026-09-24",
+    "end": "2026-11-22",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=2&c=12&s=WSK_Finalcup"
+   },
+   "2026:wsk_finalcup:3": {
+    "checked": "2026-09-24",
+    "end": "2026-11-29",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=3&c=18&s=WSK_Finalcup"
+   },
+   "2026:wsk_supermasterseries:1": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2026-01-25",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=1&c=2&s=wsk_supermasterseries"
+   },
+   "2026:wsk_supermasterseries:2": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2026-02-08",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=2&c=1&s=wsk_supermasterseries"
+   },
+   "2026:wsk_supermasterseries:3": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2026-02-22",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=3&c=18&s=wsk_supermasterseries"
+   },
+   "2026:wsk_supermasterseries:4": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2026-03-08",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=4&c=12&s=wsk_supermasterseries"
+   },
+   "2026:wsk_supermasterseries:5": {
+    "classes": {
+     "Mini Gr.3": {
+      "status": "absent"
+     },
+     "Mini U10": {
+      "status": "absent"
+     },
+     "OK Junior": {
+      "status": "absent"
+     },
+     "OK-N Junior": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "end": "2026-03-22",
+    "url": "https://www.wskarting.it/results.asp?yy=2026&r=5&c=16&s=wsk_supermasterseries"
+   },
+   "rotax_euro:2025:1": {
+    "classes": {
+     "Rotax Junior": {
+      "status": "absent"
+     },
+     "Rotax Mini": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results/rotax_euro/2025/rotax_euro_results_round1.asp"
+   },
+   "rotax_euro:2025:2": {
+    "classes": {
+     "Rotax Junior": {
+      "status": "absent"
+     },
+     "Rotax Mini": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results/rotax_euro/2025/rotax_euro_results_round2.asp"
+   },
+   "rotax_euro:2025:3": {
+    "classes": {
+     "Rotax Junior": {
+      "status": "absent"
+     },
+     "Rotax Mini": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results/rotax_euro/2025/rotax_euro_results_round3.asp"
+   },
+   "rotax_euro:2025:4": {
+    "classes": {
+     "Rotax Junior": {
+      "status": "absent"
+     },
+     "Rotax Mini": {
+      "status": "done"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results/rotax_euro/2025/rotax_euro_results_round4.asp"
+   },
+   "rotax_euro:2026:1": {
+    "classes": {
+     "ROTAX Junior": {
+      "status": "absent"
+     },
+     "ROTAX Mini": {
+      "status": "done"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results/rotax_euro/2026/rotax_euro_results_round1.asp"
+   },
+   "rotax_euro:2026:2": {
+    "classes": {
+     "ROTAX Junior": {
+      "status": "absent"
+     },
+     "ROTAX Mini": {
+      "status": "done"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results/rotax_euro/2026/rotax_euro_results_round2.asp"
+   },
+   "rotax_euro:2026:3": {
+    "classes": {
+     "ROTAX Junior": {
+      "status": "absent"
+     },
+     "ROTAX Mini": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results/rotax_euro/2026/rotax_euro_results_round3.asp"
+   },
+   "rotax_euro:2026:4": {
+    "classes": {
+     "ROTAX Junior": {
+      "status": "absent"
+     },
+     "ROTAX Mini": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results/rotax_euro/2026/rotax_euro_results_round4.asp"
+   },
+   "rotax_winter:2025:1": {
+    "classes": {
+     "Rotax Junior": {
+      "status": "absent"
+     },
+     "Rotax Mini": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results/rotax_winter/2025/rotax_winter_results_round1.asp"
+   },
+   "rotax_winter:2025:2": {
+    "classes": {
+     "Rotax Junior": {
+      "status": "absent"
+     },
+     "Rotax Mini": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/results/rotax_winter/2025/rotax_winter_results_round2.asp"
+   },
+   "rotax_winter:2026:1": {
+    "classes": {
+     "Rotax Junior": {
+      "status": "absent"
+     },
+     "Rotax Mini": {
+      "status": "absent"
+     }
+    },
+    "complete": true,
+    "url": "https://www.wskarting.it/rotax/rotax_winter_results.asp"
+   }
+  },
+  "rows": {
+   "auto-rmc-euro-trophy-2025-09-07-rotax-mini-max": {
+    "auto": true,
+    "class": "Rotax Mini MAX",
+    "confidence": "high",
+    "country": "ITA",
+    "date": "2025-09-07",
+    "entries": 31,
+    "fieldSize": 28,
+    "final": "DNS",
+    "finalPos": null,
+    "heats": "27-DNS-DNS",
+    "id": "auto-rmc-euro-trophy-2025-09-07-rotax-mini-max",
+    "prefinal": "DNS",
+    "quali": "13",
+    "round": "R4",
+    "series": "RMC Euro Trophy",
+    "sources": [
+     "https://www.wskarting.it/results/rotax_euro/2025/Round4/Mini.pdf",
+     "https://www.wskarting.it/results/rotax_euro/2025/rotax_euro_results_round4.asp"
+    ],
+    "track": "Circuito Internazionale Napoli, Sarno",
+    "trackId": "sarno",
+    "year": 2025
+   },
+   "auto-rmc-euro-trophy-2026-03-15-rotax-mini-max": {
+    "auto": true,
+    "class": "Rotax Mini MAX",
+    "confidence": "high",
+    "country": "ITA",
+    "date": "2026-03-15",
+    "entries": 33,
+    "fieldSize": 32,
+    "final": "27",
+    "finalPos": 27,
+    "heats": "2-1-8",
+    "id": "auto-rmc-euro-trophy-2026-03-15-rotax-mini-max",
+    "note": {
+     "en": "Fastest lap in the final.",
+     "fi": "Finaalin nopein kierros.",
+     "sv": "Snabbaste varvet i finalen."
+    },
+    "number": "191",
+    "prefinal": "2",
+    "quali": "2",
+    "round": "R1",
+    "series": "RMC Euro Trophy",
+    "sources": [
+     "https://www.wskarting.it/results/rotax_euro/2026/Round1/BOOKMINI.pdf",
+     "https://www.wskarting.it/results/rotax_euro/2026/rotax_euro_results_round1.asp"
+    ],
+    "track": "Cremona Circuit",
+    "trackId": "cremona",
+    "year": 2026
+   },
+   "auto-rmc-euro-trophy-2026-05-03-rotax-mini-max": {
+    "auto": true,
+    "class": "Rotax Mini MAX",
+    "confidence": "high",
+    "country": "GER",
+    "date": "2026-05-03",
+    "entries": 35,
+    "fieldSize": 35,
+    "final": "23",
+    "finalPos": 23,
+    "heats": "2-8-9",
+    "id": "auto-rmc-euro-trophy-2026-05-03-rotax-mini-max",
+    "number": "191",
+    "prefinal": "8",
+    "quali": "11",
+    "round": "R2",
+    "series": "RMC Euro Trophy",
+    "sources": [
+     "https://www.wskarting.it/results/rotax_euro/2026/Round2/Mini.pdf",
+     "https://www.wskarting.it/results/rotax_euro/2026/rotax_euro_results_round2.asp"
+    ],
+    "track": "Prokart Raceland Wackersdorf",
+    "trackId": "wackersdorf",
+    "year": 2026
+   },
+   "auto-wsk-super-cup-2024-09-08-mini-u10": {
+    "auto": true,
+    "class": "Mini U10",
+    "confidence": "high",
+    "country": "ITA",
+    "date": "2024-09-08",
+    "fieldSize": 36,
+    "final": "28",
+    "finalPos": 28,
+    "heats": "20-16-11",
+    "id": "auto-wsk-super-cup-2024-09-08-mini-u10",
+    "number": "572",
+    "prefinal": "15 (A)",
+    "quali": "14",
+    "series": "WSK Super Cup",
+    "sources": [
+     "https://www.wskarting.it/results/SC/2024/Round1/U10.pdf",
+     "https://www.wskarting.it/results.asp?yy=2024&r=1&c=16&s=WSK_supercup"
+    ],
+    "track": "Franciacorta Karting Track",
+    "trackId": "franciacorta",
+    "year": 2024
+   },
+   "auto-wsk-super-master-series-2025-02-09-mini-u10": {
+    "auto": true,
+    "class": "Mini U10",
+    "confidence": "high",
+    "country": "ITA",
+    "date": "2025-02-09",
+    "entries": 26,
+    "fieldSize": 26,
+    "final": "14",
+    "finalPos": 14,
+    "heats": "2-3-15",
+    "id": "auto-wsk-super-master-series-2025-02-09-mini-u10",
+    "number": "592",
+    "prefinal": "25",
+    "quali": "7",
+    "round": "R2",
+    "series": "WSK Super Master Series",
+    "sources": [
+     "https://www.wskarting.it/results/MS/2025/Round2/U10.pdf",
+     "https://www.wskarting.it/results.asp?yy=2025&r=2&c=1&s=wsk_supermasterseries"
+    ],
+    "track": "Circuito Internazionale Napoli, Sarno",
+    "trackId": "sarno",
+    "year": 2025
+   },
+   "auto-wsk-super-master-series-2025-02-23-mini-u10": {
+    "auto": true,
+    "class": "Mini U10",
+    "confidence": "high",
+    "country": "ITA",
+    "date": "2025-02-23",
+    "entries": 51,
+    "fieldSize": 36,
+    "final": "DNQ",
+    "finalPos": null,
+    "heats": "25-16-19",
+    "id": "auto-wsk-super-master-series-2025-02-23-mini-u10",
+    "prefinal": "18 (B)",
+    "quali": "18",
+    "round": "R3",
+    "series": "WSK Super Master Series",
+    "sources": [
+     "https://www.wskarting.it/results/MS/2025/Round3/U10.pdf",
+     "https://www.wskarting.it/results.asp?yy=2025&r=3&c=12&s=wsk_supermasterseries"
+    ],
+    "track": "South Garda Karting, Lonato",
+    "trackId": "lonato",
+    "year": 2025
+   },
+   "auto-wsk-super-master-series-2025-03-09-mini-u10": {
+    "auto": true,
+    "class": "Mini U10",
+    "confidence": "high",
+    "country": "ITA",
+    "date": "2025-03-09",
+    "entries": 36,
+    "fieldSize": 34,
+    "final": "DNS",
+    "finalPos": null,
+    "heats": "4-19-25",
+    "id": "auto-wsk-super-master-series-2025-03-09-mini-u10",
+    "number": "592",
+    "prefinal": "DNS",
+    "quali": "10",
+    "round": "R4",
+    "series": "WSK Super Master Series",
+    "sources": [
+     "https://www.wskarting.it/results/MS/2025/Round4/U10.pdf",
+     "https://www.wskarting.it/results.asp?yy=2025&r=4&c=16&s=wsk_supermasterseries"
+    ],
+    "track": "Franciacorta Karting Track",
+    "trackId": "franciacorta",
+    "year": 2025
+   }
+  },
+  "years_done": [
+   "rotax_euro:2022",
+   "rotax_euro:2023",
+   "rotax_euro:2024",
+   "rotax_euro:2025",
+   "rotax_winter:2022",
+   "rotax_winter:2023",
+   "rotax_winter:2024",
+   "rotax_winter:2025"
+  ]
+ }
+}

@@ -1,0 +1,9 @@
+# local-only material
+research/
+build/
+dist/
+.venv/
+.claude/
+__pycache__/
+*.pyc
+.DS_Store

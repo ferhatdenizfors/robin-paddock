@@ -1,0 +1,1339 @@
+<title>Robin Räikkönen Paddock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Saira:ital,wdth,wght@0,50..125,400..900;1,50..125,400..900&display=swap">
+<style>
+:root{
+  --ground:#EDF2F5; --surface:#FFFFFF; --surface-2:#E3EAF0; --ink:#0D1B2A; --ink-2:#4A5D6E; --ink-3:#768999; --line:#CAD5DE;
+  --blue:#1B4DB1; --blue-ink:#FFFFFF; --blue-soft:#DCE6F8; --kerb:#D22F28; --kerb-alt:#FFFFFF; --kerb-soft:#FBE4E2;
+  --gold:#C99A12; --silver:#8E9CA8; --bronze:#B06A2E; --ok:#1C7F4F; --warn:#A86E12;
+  --night:#0A1119; --snow:#F2F6F9; --ice:#8FB8FF;
+  --shadow:0 1px 2px rgba(13,27,42,.05),0 10px 28px -16px rgba(13,27,42,.22);
+  --f-display:"Saira","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --r:12px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0A1119; --surface:#111C27; --surface-2:#182635; --ink:#E4ECF2; --ink-2:#9CAFBF; --ink-3:#6C8093; --line:#223445;
+    --blue:#80B1FF; --blue-ink:#0A1119; --blue-soft:#15294A; --kerb:#FF5D51; --kerb-alt:#E4ECF2; --kerb-soft:#3B1816;
+    --gold:#E4BF52; --silver:#AFBCC7; --bronze:#D78F52; --ok:#4FC48C; --warn:#E8AA3E;
+    --shadow:0 1px 2px rgba(0,0,0,.35),0 12px 30px -16px rgba(0,0,0,.75);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0A1119; --surface:#111C27; --surface-2:#182635; --ink:#E4ECF2; --ink-2:#9CAFBF; --ink-3:#6C8093; --line:#223445;
+  --blue:#80B1FF; --blue-ink:#0A1119; --blue-soft:#15294A; --kerb:#FF5D51; --kerb-alt:#E4ECF2; --kerb-soft:#3B1816;
+  --gold:#E4BF52; --silver:#AFBCC7; --bronze:#D78F52; --ok:#4FC48C; --warn:#E8AA3E;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 12px 30px -16px rgba(0,0,0,.75);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--ground);color:var(--ink);font:15px/1.55 var(--f-body);margin:0;min-height:100%}
+a{color:var(--blue);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+button{font:inherit;color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{font-family:var(--f-display);margin:0;line-height:1.05;text-wrap:balance}
+h2{font-size:clamp(30px,4.4vw,44px);font-weight:850;font-style:italic;font-stretch:74%;text-transform:uppercase;letter-spacing:.005em}
+h3{font-size:20px;font-weight:750;font-stretch:88%;letter-spacing:.01em}
+p{margin:0}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:clamp(16px,4vw,32px)}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-2)}
+.eyebrow{font:600 12px/1.3 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);display:flex;align-items:center;gap:8px}
+.ic{display:inline-flex;width:1.2em;height:1.2em;vertical-align:-.2em;flex:none}
+.ic svg{width:100%;height:100%;display:block}
+.flag{display:inline-block;width:1.4em;height:1.05em;border-radius:2px;overflow:hidden;vertical-align:-.15em;box-shadow:0 0 0 1px rgba(0,0,0,.12);flex:none}
+.flag svg{width:100%;height:100%;display:block}
+.shape{display:block}
+.shape path{fill:none;stroke:currentColor;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke;stroke-width:3}
+.shape.bold path{stroke-width:5}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--ground) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px)}
+.top-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px 8px}
+.brand{display:flex;align-items:baseline;gap:10px;min-width:0;text-decoration:none;color:var(--ink)}
+.brand b{font:italic 850 22px/1 var(--f-display);font-stretch:70%;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap}
+.brand b i{color:var(--kerb);font-style:italic}
+.brand span{font:500 11px/1.2 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:var(--surface);flex:none}
+.lang button{border:0;background:none;padding:5px 10px;border-radius:999px;font:600 12px/1 var(--f-mono);letter-spacing:.06em;color:var(--ink-2);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-inline:-4px}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:none;display:flex;align-items:center;gap:6px;padding:9px 11px 11px;font:700 14px/1 var(--f-display);font-stretch:85%;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);text-decoration:none;border-bottom:3px solid transparent}
+.nav a .ic{width:15px;height:15px;opacity:.8}
+.nav a:hover{color:var(--ink)}
+.nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--kerb)}
+.kerb{height:6px;background:repeating-linear-gradient(90deg,var(--kerb) 0 22px,var(--kerb-alt) 22px 44px);border-block:1px solid var(--line)}
+
+main{padding-block:24px 56px}
+.view{display:grid;gap:28px;animation:rise .35s ease both}
+@keyframes rise{from{opacity:.001;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.view{animation:none}*{transition:none!important;animation:none!important}}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sec-head p{max-width:62ch}
+.h3i{display:flex;align-items:center;gap:10px}
+.h3i .ic{color:var(--kerb);width:22px;height:22px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(16px,2.4vw,24px);display:grid;gap:14px;align-content:start;min-width:0}
+.panel.lift{box-shadow:var(--shadow)}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px}
+.link-more{display:inline-flex;align-items:center;gap:6px;font:600 13px/1 var(--f-mono);letter-spacing:.04em;text-decoration:none;background:none;border:0;padding:0;color:var(--blue);cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font:600 12px/1.2 var(--f-mono);letter-spacing:.03em;color:var(--ink-2);white-space:nowrap}
+.chip.rb{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.chip.rb::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--kerb)}
+.chip.st-confirmed{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 45%,var(--line))}
+.chip.st-likely{color:var(--blue);border-color:color-mix(in srgb,var(--blue) 45%,var(--line))}
+.chip.st-possible{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 45%,var(--line))}
+.chip.st-unknown{color:var(--ink-3)}
+.filters{display:flex;flex-wrap:wrap;gap:6px}
+.filters button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font:600 12px/1 var(--f-mono);letter-spacing:.04em;color:var(--ink-2);cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.filters button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:var(--blue-ink)}
+.credit{font:500 10.5px/1.35 var(--f-mono);color:var(--ink-3);letter-spacing:.01em}
+.credit a{color:inherit}
+details.more{border-top:1px dashed var(--line);padding-top:8px}
+details.more summary{cursor:pointer;font:600 12px/1.4 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--blue);list-style:none;display:inline-flex;gap:6px;align-items:center}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::after{content:"+";font-size:14px}
+details.more[open] summary::after{content:"–"}
+details.more > div{display:grid;gap:8px;margin-top:8px;font-size:14px;color:var(--ink-2)}
+
+/* ---------- photo banner / hero ---------- */
+.dark-media{position:relative;border-radius:16px;overflow:hidden;background:var(--night);color:var(--snow);isolation:isolate}
+.dark-media > img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.dark-media::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,14,21,.9) 0%,rgba(8,14,21,.66) 48%,rgba(8,14,21,.22) 100%),linear-gradient(0deg,rgba(8,14,21,.8),rgba(8,14,21,0) 55%)}
+.dark-media .eyebrow{color:rgba(242,246,249,.74)}
+.dark-media .ph-credit{position:absolute;right:12px;bottom:8px;left:auto;max-width:60%;text-align:right;font:500 10px/1.3 var(--f-mono);color:rgba(242,246,249,.58)}
+.dark-media .ph-credit a{color:inherit}
+.banner{min-height:210px;display:grid;align-content:end;padding:clamp(20px,4vw,36px);padding-bottom:36px}
+.banner h2{color:var(--snow)}
+.banner p.intro{color:rgba(242,246,249,.84);max-width:60ch;margin-top:10px}
+.plainhead{display:grid;gap:8px}
+
+.hero{min-height:clamp(440px,52vw,580px);display:grid}
+.hero-in{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:28px;align-items:end;padding:clamp(20px,4vw,40px);padding-bottom:40px}
+@media (max-width:880px){.hero-in{grid-template-columns:1fr}}
+.hero-id{position:relative;display:grid;gap:16px;align-content:end;min-width:0}
+.ghost-num{position:absolute;right:0;top:-40px;z-index:-1;font:italic 900 clamp(150px,24vw,290px)/.8 var(--f-display);font-stretch:62%;color:transparent;-webkit-text-stroke:2px rgba(242,246,249,.16);letter-spacing:-.02em;user-select:none}
+.mega{font-size:clamp(58px,11vw,132px);font-weight:900;font-style:italic;font-stretch:66%;text-transform:uppercase;line-height:.84;letter-spacing:-.01em;display:grid;color:var(--snow)}
+.mega span:last-child{color:var(--ice)}
+.lede{font-size:17px;max-width:50ch;color:rgba(242,246,249,.86)}
+.hero .chip{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.24);color:var(--snow)}
+.hero .chip.rb{background:var(--snow);color:var(--night);border-color:var(--snow)}
+.next{position:relative;background:rgba(8,14,21,.7);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(242,246,249,.16);color:var(--snow);border-radius:14px;padding:22px;display:grid;gap:14px;overflow:hidden;isolation:isolate}
+.next::after{content:"";position:absolute;inset:auto 0 0 0;height:6px;background:repeating-linear-gradient(90deg,var(--kerb) 0 16px,var(--snow) 16px 32px)}
+.next .nshape{position:absolute;right:-6%;bottom:6%;width:62%;opacity:.22;z-index:-1;color:var(--snow)}
+.next .nshape path{stroke-width:5}
+.next .eyebrow{color:rgba(242,246,249,.7)}
+.next h3{font-size:26px;font-style:italic;font-weight:800;font-stretch:75%;text-transform:uppercase}
+.count{display:flex;align-items:baseline;gap:10px}
+.count b{font:italic 900 96px/.8 var(--f-display);font-stretch:62%}
+.count span{font:600 13px/1.2 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:rgba(242,246,249,.72)}
+.next dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:0;font-size:14px}
+.next dt{font:600 11px/1.6 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:rgba(242,246,249,.6)}
+.next dd{margin:0}
+.next .chip{background:transparent;color:var(--snow);border-color:rgba(242,246,249,.3)}
+.next a{color:var(--snow)}
+
+/* stat strip */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
+.strip div{padding:16px 18px;display:grid;gap:4px;border-left:1px solid var(--line)}
+.strip div:first-child{border-left:0}
+@media (max-width:560px){.strip{grid-template-columns:1fr 1fr}.strip div{border-top:1px solid var(--line)}.strip div:nth-child(odd){border-left:0}.strip div:nth-child(-n+2){border-top:0}}
+.strip .ic{width:20px;height:20px;color:var(--kerb)}
+.strip b{font:italic 850 46px/1 var(--f-display);font-stretch:70%;font-variant-numeric:tabular-nums}
+.strip span{font:600 11px/1.3 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+
+/* battle */
+.battle{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 28px;align-items:center}
+@media (max-width:700px){.battle{grid-template-columns:1fr}}
+.brows{display:grid;gap:10px}
+.brow{display:grid;grid-template-columns:minmax(96px,170px) minmax(0,1fr) 70px;gap:12px;align-items:center;font-size:14px}
+.brow .bn{display:flex;align-items:center;gap:8px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brow .bn i{font:italic 800 16px/1 var(--f-display);font-stretch:80%;color:var(--ink-3);width:18px;text-align:right;flex:none}
+.brow .bt{height:24px;background:var(--surface-2);border-radius:5px;overflow:hidden}
+.brow .bf{display:block;height:100%;background:var(--ink-3);border-radius:5px}
+.brow.robin .bf{background:var(--blue)}
+.brow.robin .bn{color:var(--blue)}
+.brow .bp{font:700 15px/1 var(--f-mono);text-align:right;font-variant-numeric:tabular-nums}
+.gapbox{display:grid;gap:2px;justify-items:start;padding:14px 18px;border-radius:10px;background:var(--surface-2)}
+.gapbox b{font:italic 900 56px/.9 var(--f-display);font-stretch:62%;color:var(--kerb)}
+.gapbox span{font:600 11px/1.3 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+
+/* timing tower */
+.tower{display:grid;margin:0;padding:0;list-style:none}
+.tower li{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.tower li:first-child{border-top:0}
+.tower .ev{min-width:0}
+.tower .ev b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tower .ev small{color:var(--ink-2);font-size:13px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.tower time{font:500 12px/1 var(--f-mono);color:var(--ink-3);white-space:nowrap}
+.pos{display:inline-grid;place-items:center;min-width:44px;height:30px;padding:0 6px;border-radius:6px;font:italic 800 17px/1 var(--f-display);font-stretch:80%;background:var(--surface-2);color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pos.p1{background:var(--gold);color:#1a1405}
+.pos.p2{background:var(--silver);color:#10161c}
+.pos.p3{background:var(--bronze);color:#fff}
+.pos.p10{background:var(--blue-soft);color:var(--blue)}
+.pos.pout{background:var(--kerb-soft);color:var(--kerb)}
+.pos.pos-na{background:transparent;color:var(--ink-3)}
+
+/* career grid */
+.cgrid{display:grid}
+.crow{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:16px;align-items:center;padding:14px 0;border-top:1px solid var(--line)}
+.crow:first-child{border-top:0}
+.cy{display:grid;gap:2px}
+.cy b{font:italic 900 38px/1 var(--f-display);font-stretch:62%}
+.cy span{font:600 10.5px/1.3 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.tiles{display:flex;flex-wrap:wrap;gap:6px}
+.tile{width:40px;height:40px;border-radius:8px;display:grid;place-items:center;font:italic 800 16px/1 var(--f-display);font-stretch:80%;border:0;cursor:pointer;background:var(--surface-2);color:var(--ink-2);transition:transform .12s}
+.tile:hover{transform:translateY(-2px)}
+.tile.t1{background:var(--gold);color:#1a1405}.tile.t2{background:var(--silver);color:#10161c}.tile.t3{background:var(--bronze);color:#fff}
+.tile.t10{background:var(--blue-soft);color:var(--blue)}.tile.tout{background:var(--kerb-soft);color:var(--kerb)}
+.ctot{display:flex;gap:14px;font:600 12px/1.3 var(--f-mono);color:var(--ink-2);white-space:nowrap}
+.ctot span{display:flex;align-items:center;gap:5px}
+.ctot .ic{width:15px;height:15px}
+.crow .story{grid-column:2/-1}
+@media (max-width:640px){.crow{grid-template-columns:1fr;gap:10px}.crow .story{grid-column:1}}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font:500 12px var(--f-mono);color:var(--ink-2)}
+.legend span{display:inline-flex;gap:6px;align-items:center}
+.legend i{width:14px;height:14px;border-radius:4px;display:inline-block}
+
+/* trophies */
+.trophies{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:12px}
+.trophy{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+.trophy .ti{width:44px;height:44px;border-radius:10px;display:grid;place-items:center;background:var(--surface-2);color:var(--ink-2)}
+.trophy .ti .ic{width:24px;height:24px}
+.trophy.title .ti{background:var(--gold);color:#1a1405}
+.trophy b.mono{font-size:12px;color:var(--ink-3)}
+.trophy p{font-size:14px}
+
+/* race cards */
+.races{display:grid;gap:10px}
+.yearhead{display:flex;align-items:baseline;gap:12px;margin-top:10px}
+.yearhead b{font:italic 900 46px/1 var(--f-display);font-stretch:62%;color:var(--ink)}
+.yearhead span{font:600 12px var(--f-mono);color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase}
+.race{display:grid;grid-template-columns:64px minmax(0,1fr) 96px;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;scroll-margin-top:140px}
+.race > .pos{min-width:58px;height:50px;font-size:25px;border-radius:9px}
+.race-main{display:grid;gap:8px;min-width:0}
+.race-top{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.race-top b{font:750 18px/1.15 var(--f-display);font-stretch:88%}
+.race-top time{font:500 12px var(--f-mono);color:var(--ink-3)}
+.race-sub{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;font-size:14px;color:var(--ink-2)}
+.tstrip{justify-self:start;display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;max-width:100%;background:var(--ground)}
+.tstrip span{display:grid;gap:2px;padding:5px 11px;border-left:1px solid var(--line);text-align:center;min-width:52px}
+.tstrip span:first-child{border-left:0}
+.tstrip small{font:600 9.5px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.tstrip b{font:600 13px/1.2 var(--f-mono);white-space:nowrap}
+.race-shape{color:var(--ink-3);height:64px;display:grid;place-items:center}
+.race-shape svg{max-width:100%;max-height:64px;width:auto;height:64px}
+.race details.more{grid-column:2/-1}
+.race.flash,.track.flash{animation:flash 1.8s ease}
+@keyframes flash{0%,40%{box-shadow:0 0 0 3px var(--kerb)}100%{box-shadow:0 0 0 0 transparent}}
+@media (max-width:620px){.race{grid-template-columns:56px minmax(0,1fr)}.race-shape{display:none}.race details.more{grid-column:1/-1}}
+
+/* news */
+.news{list-style:none;margin:0;padding:0;display:grid}
+.news li{display:grid;gap:5px;padding:14px 0;border-top:1px solid var(--line)}
+.news li:first-child{border-top:0;padding-top:0}
+.news .meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font:500 12px/1.3 var(--f-mono);color:var(--ink-3);letter-spacing:.02em}
+.news .meta .cat{color:var(--kerb);text-transform:uppercase;letter-spacing:.08em;font-weight:600;display:inline-flex;gap:5px;align-items:center}
+.news .meta .cat .ic{width:14px;height:14px}
+.news h4{font:600 16px/1.35 var(--f-body)}
+.news h4 a{color:var(--ink);text-decoration:none}
+.news h4 a:hover{color:var(--blue);text-decoration:underline}
+.news p{color:var(--ink-2);max-width:72ch}
+.feature{display:grid;gap:12px;background:var(--night);color:var(--snow);border-radius:14px;padding:clamp(20px,3vw,30px);position:relative;overflow:hidden}
+.feature .meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font:500 12px var(--f-mono);color:rgba(242,246,249,.7)}
+.feature h3{font:italic 850 clamp(26px,3.6vw,38px)/1.02 var(--f-display);font-stretch:74%;text-transform:none}
+.feature h3 a{color:var(--snow);text-decoration:none}
+.feature p{color:rgba(242,246,249,.84);max-width:70ch}
+.feature::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;background:repeating-linear-gradient(90deg,var(--kerb) 0 16px,var(--snow) 16px 32px)}
+
+/* quote */
+.quote{margin:0;display:grid;gap:10px}
+.quote blockquote{margin:0;font:italic 700 clamp(22px,3vw,30px)/1.15 var(--f-display);font-stretch:85%;text-wrap:balance}
+.quote blockquote::before{content:"“"}
+.quote blockquote::after{content:"”"}
+.quote figcaption{font-size:13px;color:var(--ink-2)}
+.orig{font-size:13px;color:var(--ink-3);font-style:italic}
+.btn{display:inline-flex;align-items:center;gap:8px;justify-self:start;border:1px solid var(--ink);background:var(--ink);color:var(--ground);border-radius:999px;padding:9px 16px;font:700 13px/1 var(--f-display);font-stretch:90%;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.btn:hover{background:var(--blue);border-color:var(--blue);color:var(--blue-ink)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--blue);color:var(--blue);background:transparent}
+
+/* tables */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{font:600 11px/1.3 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--surface-2)}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td .sub{display:block;color:var(--ink-3);font-size:12.5px;margin-top:2px}
+td.nowrap{white-space:nowrap}
+.src{font:500 11px/1 var(--f-mono);text-decoration:none}
+
+/* charts */
+.chart{width:100%;height:auto;display:block}
+.chart text{fill:var(--ink-2);font:500 11px var(--f-mono)}
+.chart .grid{stroke:var(--line);stroke-width:1}
+.chart .line{fill:none;stroke:var(--blue);stroke-width:2.2;stroke-linejoin:round}
+.chart .area{fill:var(--blue);opacity:.09}
+.bars{display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(90px,170px) minmax(0,1fr) auto;gap:10px;align-items:center;font-size:14px}
+.bar .lbl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .trk{height:14px;background:var(--surface-2);border-radius:3px;overflow:hidden}
+.bar .fill{display:block;height:100%;background:var(--ink-3);border-radius:3px}
+.bar.robin .fill{background:var(--blue)}
+.bar.current .fill{background:var(--kerb)}
+.bar .val{font:600 13px/1 var(--f-mono);font-variant-numeric:tabular-nums;min-width:78px;text-align:right}
+@media (max-width:520px){.bar{grid-template-columns:minmax(80px,110px) minmax(0,1fr) auto}}
+
+/* calendar */
+.cal{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.cal li{display:grid;grid-template-columns:92px minmax(0,1fr) 110px;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.cal li.is-next{border-color:var(--kerb);box-shadow:inset 5px 0 0 var(--kerb)}
+.cal .d{display:grid;align-content:start;gap:2px}
+.cal .d b{font:italic 900 32px/1 var(--f-display);font-stretch:62%;font-variant-numeric:tabular-nums}
+.cal .d span{font:600 11px/1.2 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.cal .body{display:grid;gap:6px;min-width:0}
+.cal .body h3{font-size:19px}
+.cal .row{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:14px;color:var(--ink-2)}
+.cal .cshape{color:var(--ink-3);height:74px;display:grid;place-items:center}
+.cal .cshape svg{height:74px;width:auto;max-width:100%}
+.cal li.is-next .cshape{color:var(--kerb)}
+.trk-link{background:none;border:0;padding:0;color:var(--blue);cursor:pointer;text-decoration:underline;text-underline-offset:3px;font:inherit}
+@media (max-width:620px){.cal li{grid-template-columns:1fr;gap:8px}.cal .d{display:flex;gap:10px;align-items:baseline}.cal .cshape{display:none}}
+
+/* tech */
+.anat{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:24px;align-items:start}
+@media (max-width:860px){.anat{grid-template-columns:1fr}}
+.kd{position:relative;border-radius:12px;overflow:hidden;background:var(--surface-2)}
+.kd img{width:100%;height:auto}
+.hs{position:absolute;transform:translate(-50%,-50%);width:28px;height:28px;border-radius:50%;background:var(--kerb);color:#fff;border:2px solid #fff;font:700 11px/1 var(--f-mono);display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.35);transition:transform .12s;padding:0}
+.hs:hover,.hs:focus-visible{transform:translate(-50%,-50%) scale(1.15)}
+.hs.on{background:var(--blue);color:var(--blue-ink)}
+.parts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:4px}
+.parts button{width:100%;text-align:left;display:flex;gap:8px;align-items:center;border:1px solid transparent;background:none;border-radius:6px;padding:6px 8px;cursor:pointer;font-size:13.5px;color:var(--ink-2)}
+.parts button b{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--surface-2);font:700 10px var(--f-mono);color:var(--ink);flex:none}
+.parts button[aria-pressed="true"]{border-color:var(--blue);color:var(--ink);background:var(--blue-soft)}
+.parts button[aria-pressed="true"] b{background:var(--blue);color:var(--blue-ink)}
+.part-card{border-left:4px solid var(--blue);padding:4px 0 4px 16px;display:grid;gap:10px}
+.part-card h3{font-size:26px;font-style:italic;font-weight:800;font-stretch:76%;text-transform:uppercase}
+.part-card p{max-width:62ch}
+.part-card figure{margin:0;display:grid;gap:6px}
+.part-card figure img{border-radius:10px;aspect-ratio:16/10;object-fit:cover;width:100%;height:auto;max-height:340px;background:var(--surface-2)}
+.nerd{font-size:14px;color:var(--ink-2)}
+.nerd b{font:700 10.5px var(--f-mono);letter-spacing:.1em;color:var(--kerb);margin-right:6px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:14px}
+.gallery figure{margin:0;display:grid;gap:6px;align-content:start}
+.gallery img{border-radius:10px;aspect-ratio:4/3;object-fit:cover;width:100%;height:auto;background:var(--surface-2)}
+.gallery figcaption{font-size:13.5px;color:var(--ink-2)}
+.steps{list-style:none;margin:0;padding:0;display:grid;counter-reset:s}
+.steps li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;padding:12px 0;border-top:1px solid var(--line);counter-increment:s}
+.steps li:first-child{border-top:0}
+.steps li::before{content:counter(s);font:italic 900 30px/1 var(--f-display);font-stretch:66%;color:var(--kerb)}
+.steps b{display:block;margin-bottom:2px}
+.steps p{color:var(--ink-2);font-size:14px;max-width:70ch}
+.search{width:100%;max-width:340px;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 12px;font:inherit;color:var(--ink)}
+.gloss{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:10px}
+.gloss div{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:grid;gap:4px;align-content:start}
+.gloss b{font:700 16px/1.2 var(--f-display);font-stretch:90%}
+.gloss p{font-size:13.5px;color:var(--ink-2)}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.facts li{display:grid;grid-template-columns:auto 1fr;gap:12px;font-size:14.5px}
+.facts li::before{content:"";width:8px;height:8px;margin-top:7px;background:var(--kerb);transform:rotate(45deg)}
+
+/* tracks */
+.tracks{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,350px),1fr));gap:18px}
+.track{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:grid;align-content:start;scroll-margin-top:140px}
+.track-vis{position:relative;aspect-ratio:16/9;background-color:var(--surface-2);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:24px 24px;background-position:-1px -1px;display:grid;place-items:center;color:var(--ink);overflow:hidden}
+.track-vis > .shape{width:78%;height:78%}
+.track-vis > .shape path{stroke-width:5}
+.track-vis.has-photo > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.track-vis.has-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,14,21,.72),rgba(8,14,21,.05) 60%)}
+.track-vis.has-photo > .shape{position:absolute;right:12px;bottom:12px;width:34%;height:44%;z-index:1;color:var(--snow);filter:drop-shadow(0 1px 3px rgba(0,0,0,.6))}
+.track-vis.has-photo > .shape path{stroke-width:3.5}
+.track-vis .flagbig{position:absolute;left:12px;top:12px;z-index:1}
+.track-vis .flagbig .flag{width:30px;height:22px;border-radius:3px}
+.track-body{padding:16px 18px 18px;display:grid;gap:12px}
+.track header{display:flex;justify-content:space-between;gap:10px;align-items:start}
+.track h3{font-size:23px;font-style:italic;font-weight:800;font-stretch:76%;text-transform:uppercase}
+.specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(84px,1fr));gap:8px;margin:0}
+.specs div{background:var(--surface-2);border-radius:6px;padding:8px 10px}
+.specs dt{font:600 10px/1.3 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.specs dd{margin:2px 0 0;font:600 14px/1.25 var(--f-mono);font-variant-numeric:tabular-nums;overflow-wrap:anywhere;hyphens:auto}
+.track p{font-size:14px}
+.rr{border-radius:8px;background:var(--blue-soft);padding:10px 12px;color:var(--ink);font-size:14px}
+.rr b{color:var(--blue)}
+.lbl-mini{font:700 10.5px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-right:6px}
+
+/* ladder */
+.ladder{list-style:none;margin:0;padding:0;display:grid}
+.ladder li{display:grid;grid-template-columns:40px 86px minmax(0,1fr);gap:16px;padding:16px 0;border-top:1px solid var(--line);align-items:start}
+.ladder li:first-child{border-top:0}
+.ladder .li-ic{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:var(--surface-2);color:var(--ink-2)}
+.ladder .li-ic .ic{width:22px;height:22px}
+.ladder li.now .li-ic{background:var(--kerb);color:#fff}
+.ladder li.done .li-ic{background:var(--blue-soft);color:var(--blue)}
+.ladder .yr{display:grid;align-content:start;gap:2px}
+.ladder .yr b{font:italic 900 32px/1 var(--f-display);font-stretch:62%;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.ladder .yr span{font:600 11px/1.3 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.ladder li.now .yr b{color:var(--kerb)}
+.ladder li.done .yr b{color:var(--ink-3)}
+.ladder h3{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ladder p{color:var(--ink-2);font-size:14px;max-width:72ch;margin-top:4px}
+.ladder .ages{font:500 12px/1.4 var(--f-mono);color:var(--ink-3);margin-top:4px}
+@media (max-width:560px){.ladder li{grid-template-columns:40px minmax(0,1fr)}.ladder li > div:last-child{grid-column:1/-1}}
+.names{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:8px;list-style:none;margin:0;padding:0}
+.names li{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--surface);display:grid;gap:2px}
+.names b{font:700 16px/1.2 var(--f-display);font-stretch:90%;display:flex;gap:6px;align-items:center}
+.names span{font-size:13px;color:var(--ink-2)}
+details.rule{border-top:1px solid var(--line);padding:10px 0}
+details.rule:first-of-type{border-top:0}
+details.rule summary{cursor:pointer;font-weight:600}
+details.rule p{color:var(--ink-2);font-size:14px;margin-top:6px;max-width:72ch}
+
+/* kimi */
+.kstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));background:var(--night);color:var(--snow);border-radius:14px;overflow:hidden;position:relative}
+.kstats div{padding:18px 20px;display:grid;gap:4px;border-left:1px solid rgba(242,246,249,.12)}
+.kstats div:first-child{border-left:0}
+.kstats b{font:italic 900 52px/1 var(--f-display);font-stretch:62%;font-variant-numeric:tabular-nums}
+.kstats span{font:600 11px/1.3 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:rgba(242,246,249,.66)}
+.kstats .ic{width:18px;height:18px;color:var(--ice)}
+.tl{list-style:none;margin:0 0 0 6px;padding:0;display:grid;border-left:2px solid var(--line)}
+.tl li{display:grid;gap:2px;padding:0 0 18px 20px;position:relative}
+.tl li::before{content:"";position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--ink-3)}
+.tl li.key::before{background:var(--kerb);border-color:var(--kerb)}
+.tl .when{font:600 12px/1.3 var(--f-mono);letter-spacing:.06em;color:var(--ink-2);text-transform:uppercase}
+.tl b{font:700 17px/1.25 var(--f-display);font-stretch:90%}
+.tl p{font-size:14px;color:var(--ink-2);max-width:66ch}
+.vs td:first-child{font-weight:600;white-space:nowrap}
+.vs th.robin{color:var(--blue)}
+.vs th.kimi{color:var(--kerb)}
+.qpanel{background:var(--night);color:var(--snow);border-color:transparent}
+.qpanel .eyebrow{color:rgba(242,246,249,.7)}
+.qpanel .quote figcaption,.qpanel .orig{color:rgba(242,246,249,.7)}
+.qpanel .btn{background:var(--snow);color:var(--night);border-color:var(--snow)}
+.qpanel .btn:hover{background:var(--ice);border-color:var(--ice)}
+.qpanel a{color:var(--ice)}
+
+/* quiz */
+.quiz{max-width:760px;display:grid;gap:16px}
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.qbar{height:6px;background:var(--surface-2);border-radius:3px;overflow:hidden}
+.qbar i{display:block;height:100%;background:var(--kerb)}
+.qq{font:italic 800 clamp(22px,3vw,28px)/1.15 var(--f-display);font-stretch:85%}
+.opts{display:grid;gap:8px}
+.opts button{text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:12px 14px;cursor:pointer;font-size:15px;display:flex;gap:12px;align-items:center}
+.opts button:hover:not([disabled]){border-color:var(--blue)}
+.opts button b{font:700 12px var(--f-mono);color:var(--ink-3)}
+.opts button.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,var(--surface))}
+.opts button.wrong{border-color:var(--kerb);background:var(--kerb-soft)}
+.opts button[disabled]{cursor:default}
+.explain{border-left:4px solid var(--ok);padding:4px 0 4px 14px;color:var(--ink-2)}
+.explain.bad{border-left-color:var(--kerb)}
+.score{font:italic 900 96px/.9 var(--f-display);font-stretch:62%}
+
+footer{border-top:1px solid var(--line);padding-block:24px 40px;color:var(--ink-3);font-size:13px}
+footer .wrap{display:grid;gap:8px}
+footer details summary{cursor:pointer;font-weight:600;color:var(--ink-2)}
+footer ul{margin:8px 0 0;padding-left:18px;display:grid;gap:4px;font-size:12px}
+footer a{color:var(--ink-2)}
+.empty{color:var(--ink-3);font-style:italic}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="#paddock"><b>Robin <i>/</i> Räikkönen</b><span id="tagline"></span></a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="fi">FI</button><button type="button" data-lang="sv">SV</button><button type="button" data-lang="en">EN</button>
+    </div>
+  </div>
+  <nav class="wrap nav" id="nav" aria-label="Sections"></nav>
+  <div class="kerb" aria-hidden="true"></div>
+</header>
+
+<main class="wrap" id="main"></main>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script src="assets.js"></script>
+<script src="data.js"></script>
+<script src="auto.js"></script>
+<script>
+(function(){
+'use strict';
+var D = window.RR_DATA || {};
+var A = window.RR_ASSETS || {};
+var AU = window.RR_AUTO || null;
+var CURATED_DATE = (D.meta && D.meta.updated) || '';
+var VIEWS = ['paddock','tulokset','kalenteri','uutiset','tekniikka','radat','tie-f1','kimi','visa'];
+var NAV_IC = {paddock:'flag-checkered', tulokset:'trophy', kalenteri:'calendar', uutiset:'newspaper', tekniikka:'engine', radat:'map', 'tie-f1':'steps', kimi:'snowflake', visa:'question'};
+var LANGS = ['fi','sv','en'];
+var LOCALE = {fi:'fi-FI', sv:'sv-SE', en:'en-GB'};
+var lang = 'fi';
+try { var saved = localStorage.getItem('rr-lang'); if (LANGS.indexOf(saved) > -1) lang = saved; } catch (e) {}
+
+var UI = {
+  tagline:{fi:'Epävirallinen fanisivu',sv:'Inofficiell fansida',en:'Unofficial fan page'},
+  'nav-paddock':{fi:'Paddock',sv:'Paddock',en:'Paddock'},
+  'nav-tulokset':{fi:'Tulokset',sv:'Resultat',en:'Results'},
+  'nav-kalenteri':{fi:'Kalenteri',sv:'Kalender',en:'Calendar'},
+  'nav-uutiset':{fi:'Uutiset',sv:'Nyheter',en:'News'},
+  'nav-tekniikka':{fi:'Tekniikka',sv:'Teknik',en:'Tech'},
+  'nav-radat':{fi:'Radat',sv:'Banor',en:'Tracks'},
+  'nav-tie-f1':{fi:'Tie F1:een',sv:'Vägen till F1',en:'Road to F1'},
+  'nav-kimi':{fi:'Kimi & Robin',sv:'Kimi & Robin',en:'Kimi & Robin'},
+  'nav-visa':{fi:'Visa',sv:'Quiz',en:'Quiz'},
+  born:{fi:'s.',sv:'f.',en:'b.'},
+  next_race:{fi:'Seuraava kisa',sv:'Nästa tävling',en:'Next race'},
+  days:{fi:'päivää',sv:'dagar',en:'days'},
+  day:{fi:'päivä',sv:'dag',en:'day'},
+  to_go:{fi:'lähtöön',sv:'kvar',en:'to go'},
+  race_on:{fi:'Kisaviikonloppu käynnissä nyt',sv:'Tävlingshelgen pågår nu',en:'Race weekend under way'},
+  no_next:{fi:'Seuraavaa kisaa ei ole vielä julkaistu. Kalenteri päivittyy, kun tietoa tulee.',sv:'Nästa tävling är inte publicerad än. Kalendern uppdateras när besked kommer.',en:'The next race has not been announced yet. The calendar updates as soon as it is.'},
+  when:{fi:'Milloin',sv:'När',en:'When'},
+  where:{fi:'Missä',sv:'Var',en:'Where'},
+  cls:{fi:'Luokka',sv:'Klass',en:'Class'},
+  status:{fi:'Tila',sv:'Status',en:'Status'},
+  latest_results:{fi:'Viimeisimmät tulokset',sv:'Senaste resultaten',en:'Latest results'},
+  latest_news:{fi:'Tuoreimmat uutiset',sv:'Senaste nyheterna',en:'Latest news'},
+  all_results:{fi:'Kaikki tulokset',sv:'Alla resultat',en:'All results'},
+  all_news:{fi:'Kaikki uutiset',sv:'Alla nyheter',en:'All news'},
+  stat_events:{fi:'Kilpailua',sv:'Tävlingar',en:'Events'},
+  stat_wins:{fi:'Voittoa',sv:'Segrar',en:'Wins'},
+  stat_podiums:{fi:'Palkintosijaa',sv:'Pallplatser',en:'Podiums'},
+  stat_titles:{fi:'Mestaruus',sv:'Titel',en:'Title'},
+  stat_titles_pl:{fi:'Mestaruutta',sv:'Titlar',en:'Titles'},
+  stat_age:{fi:'Vuotta',sv:'År',en:'Years old'},
+  stat_note:{fi:'Luvut lasketaan tälle sivulle kootuista finaalituloksista.',sv:'Siffrorna räknas fram ur finalresultaten som samlats här.',en:'Figures are counted from the final results collected on this page.'},
+  did_you_know:{fi:'Tiesitkö?',sv:'Visste du?',en:'Did you know?'},
+  another_fact:{fi:'Uusi fakta',sv:'Ny fakta',en:'Another fact'},
+  rb_title:{fi:'Red Bull Junior Team',sv:'Red Bull Junior Team',en:'Red Bull Junior Team'},
+  announced:{fi:'Julkistettu',sv:'Offentliggjort',en:'Announced'},
+  original:{fi:'Alkuperäinen',sv:'Original',en:'Original'},
+  photo:{fi:'Kuva',sv:'Foto',en:'Photo'},
+  more:{fi:'Lisätiedot',sv:'Detaljer',en:'Details'},
+  story:{fi:'Kauden tarina',sv:'Säsongens berättelse',en:'Season story'},
+  // battle
+  battle_h:{fi:'Mestaruustaisto',sv:'Titelstriden',en:'Title fight'},
+  battle_gap:{fi:'eroa kärkeen',sv:'upp till ledaren',en:'to the leader'},
+  battle_lead:{fi:'johtoa',sv:'ledning',en:'lead'},
+  battle_decider:{fi:'Ratkaisu',sv:'Avgörs',en:'Decider'},
+  pts:{fi:'p',sv:'p',en:'pts'},
+  // results
+  res_title:{fi:'Tulokset',sv:'Resultat',en:'Results'},
+  res_intro:{fi:'Koko ura yhdellä silmäyksellä. Jokainen ruutu on yksi kisa – klikkaa nähdäksesi aika-ajon, erät ja finaalin.',sv:'Hela karriären i en blick. Varje ruta är en tävling – klicka för kval, heat och final.',en:'The whole career at a glance. Every tile is one race – tap it for qualifying, heats and final.'},
+  grid_h:{fi:'Ura ruutuina',sv:'Karriären i rutor',en:'Career grid'},
+  lg_win:{fi:'Voitto',sv:'Seger',en:'Win'},
+  lg_pod:{fi:'2.–3.',sv:'2–3',en:'2nd–3rd'},
+  lg_top:{fi:'4.–10.',sv:'4–10',en:'4th–10th'},
+  lg_rest:{fi:'11.+',sv:'11+',en:'11th+'},
+  lg_out:{fi:'Keskeytys / ei lähtöä',sv:'Utbruten / ej start',en:'DNF / DNS'},
+  wins_s:{fi:'voittoa',sv:'segrar',en:'wins'},
+  podiums_s:{fi:'palkintoa',sv:'pallplatser',en:'podiums'},
+  races_s:{fi:'kisaa',sv:'tävlingar',en:'races'},
+  seasons:{fi:'Kaudet',sv:'Säsonger',en:'Seasons'},
+  all:{fi:'Kaikki',sv:'Alla',en:'All'},
+  chart_title:{fi:'Finaalisijoitukset ajan mittaan',sv:'Finalplaceringar över tid',en:'Final positions over time'},
+  chart_note:{fi:'Ylempänä on parempi.',sv:'Högre upp är bättre.',en:'Higher is better.'},
+  th_date:{fi:'Päivä',sv:'Datum',en:'Date'},
+  th_track:{fi:'Rata',sv:'Bana',en:'Track'},
+  th_class:{fi:'Luokka',sv:'Klass',en:'Class'},
+  ts_q:{fi:'Aika-ajo',sv:'Kval',en:'Quali'},
+  ts_h:{fi:'Erät',sv:'Heat',en:'Heats'},
+  ts_pf:{fi:'Esifin.',sv:'Prefinal',en:'Prefinal'},
+  ts_f:{fi:'Finaali',sv:'Final',en:'Final'},
+  th_champ:{fi:'Sarjassa',sv:'I serien',en:'Standing'},
+  th_src:{fi:'Lähde',sv:'Källa',en:'Source'},
+  field:{fi:'kuljettajaa',sv:'förare',en:'drivers'},
+  titles_h:{fi:'Pokaalikaappi',sv:'Pokalskåpet',en:'Trophy cabinet'},
+  no_results:{fi:'Ei tuloksia tällä suodatuksella.',sv:'Inga resultat med det här filtret.',en:'No results for this filter.'},
+  race_list:{fi:'Kaikki kisat',sv:'Alla tävlingar',en:'Every race'},
+  // calendar
+  cal_title:{fi:'Kalenteri',sv:'Kalender',en:'Calendar'},
+  cal_intro:{fi:'Tulevat kisat. Tila kertoo, onko Robinin osallistuminen vahvistettu vai vasta odotettavissa.',sv:'Kommande tävlingar. Statusen visar om Robins start är bekräftad eller bara väntad.',en:'Upcoming races. The status shows whether Robin\'s entry is confirmed or only expected.'},
+  cal_upcoming:{fi:'Tulossa',sv:'Kommande',en:'Coming up'},
+  cal_2027:{fi:'Kausi 2027',sv:'Säsongen 2027',en:'2027 season'},
+  add_cal:{fi:'Lisää Google-kalenteriin',sv:'Lägg till i Google Kalender',en:'Add to Google Calendar'},
+  'st-confirmed':{fi:'Vahvistettu',sv:'Bekräftad',en:'Confirmed'},
+  'st-likely':{fi:'Todennäköinen',sv:'Trolig',en:'Likely'},
+  'st-possible':{fi:'Mahdollinen',sv:'Möjlig',en:'Possible'},
+  'st-unknown':{fi:'Ei tiedossa',sv:'Okänt',en:'Unknown'},
+  no_upcoming:{fi:'Ei julkaistuja tulevia kisoja juuri nyt.',sv:'Inga publicerade kommande tävlingar just nu.',en:'No published upcoming races right now.'},
+  // news
+  news_title:{fi:'Uutiset',sv:'Nyheter',en:'News'},
+  news_intro:{fi:'Koottu Suomen ja maailman mediasta. Otsikot alkuperäiskielellä, tiivistelmät omin sanoin.',sv:'Samlat från finsk och internationell media. Rubriker på originalspråk, sammanfattningar med egna ord.',en:'Collected from Finnish and international media. Headlines in their original language, summaries in our own words.'},
+  read:{fi:'Lue juttu',sv:'Läs artikeln',en:'Read the story'},
+  'cat-all':{fi:'Kaikki',sv:'Alla',en:'All'},
+  'cat-result':{fi:'Tulos',sv:'Resultat',en:'Result'},
+  'cat-signing':{fi:'Sopimus',sv:'Kontrakt',en:'Signing'},
+  'cat-injury':{fi:'Loukkaantuminen',sv:'Skada',en:'Injury'},
+  'cat-interview':{fi:'Haastattelu',sv:'Intervju',en:'Interview'},
+  'cat-feature':{fi:'Juttu',sv:'Reportage',en:'Feature'},
+  'cat-other':{fi:'Muu',sv:'Övrigt',en:'Other'},
+  quotes_h:{fi:'He sanoivat',sv:'De sa',en:'What they said'},
+  // tech
+  tech_title:{fi:'Tekniikka',sv:'Teknik',en:'Tech'},
+  tech_intro:{fi:'Karting on moottoriurheilun puhtainta fysiikkaa: ei jousitusta, ei tasauspyörästöä, ei vaihteita juniorluokissa.',sv:'Karting är motorsportens renaste fysik: ingen fjädring, ingen differential, inga växlar i juniorklasserna.',en:'Karting is motorsport physics at its purest: no suspension, no differential, no gears in the junior classes.'},
+  anat_h:{fi:'Kartingauton anatomia',sv:'Kartens anatomi',en:'Anatomy of a kart'},
+  anat_hint:{fi:'Klikkaa numeroa tai osan nimeä.',sv:'Klicka på en siffra eller ett namn.',en:'Tap a number or a part name.'},
+  classes_h:{fi:'Luokkavertailu',sv:'Klassjämförelse',en:'Class comparison'},
+  classes_intro:{fi:'Robinin nykyinen luokka verrattuna seuraaviin portaisiin.',sv:'Robins nuvarande klass jämfört med nästa steg.',en:'Robin\'s current class compared with the next steps.'},
+  m_hp:{fi:'Teho',sv:'Effekt',en:'Power'},
+  m_weight:{fi:'Minimipaino',sv:'Minimivikt',en:'Minimum weight'},
+  m_speed:{fi:'Huippunopeus',sv:'Toppfart',en:'Top speed'},
+  hp_u:{fi:'hv',sv:'hk',en:'hp'},
+  show_ref:{fi:'Näytä myös F4 ja F1',sv:'Visa även F4 och F1',en:'Include F4 and F1'},
+  th_age:{fi:'Ikä',sv:'Ålder',en:'Age'},
+  th_engine:{fi:'Moottori',sv:'Motor',en:'Engine'},
+  th_hp:{fi:'Teho',sv:'Effekt',en:'Power'},
+  th_rpm:{fi:'Kierrokset',sv:'Varvtal',en:'Revs'},
+  th_gear:{fi:'Voimansiirto',sv:'Kraftöverföring',en:'Drivetrain'},
+  th_weight:{fi:'Paino',sv:'Vikt',en:'Weight'},
+  th_tyres:{fi:'Renkaat',sv:'Däck',en:'Tyres'},
+  th_speed:{fi:'Huippunop.',sv:'Toppfart',en:'Top speed'},
+  'rb-raced':{fi:'Robin ajanut',sv:'Robin har kört',en:'Robin raced'},
+  'rb-current':{fi:'Robin nyt',sv:'Robin nu',en:'Robin now'},
+  'rb-next':{fi:'Seuraava askel',sv:'Nästa steg',en:'Next step'},
+  'rb-future':{fi:'Tulevaisuus',sv:'Framtiden',en:'Future'},
+  'rb-reference':{fi:'Vertailuksi',sv:'Som jämförelse',en:'For scale'},
+  gallery_h:{fi:'Lähikuvia',sv:'Närbilder',en:'Close-ups'},
+  weekend_h:{fi:'Näin kisaviikonloppu etenee',sv:'Så går en tävlingshelg till',en:'How a race weekend works'},
+  gloss_h:{fi:'Sanasto',sv:'Ordlista',en:'Glossary'},
+  gloss_ph:{fi:'Hae termiä…',sv:'Sök term…',en:'Search terms…'},
+  facts_h:{fi:'Nörttifaktat',sv:'Nördfakta',en:'Nerd facts'},
+  equip_h:{fi:'Robinin kalusto',sv:'Robins utrustning',en:'Robin\'s equipment'},
+  th_year:{fi:'Vuosi',sv:'År',en:'Year'},
+  th_team:{fi:'Talli',sv:'Team',en:'Team'},
+  th_chassis:{fi:'Runko',sv:'Chassi',en:'Chassis'},
+  // tracks
+  tracks_title:{fi:'Radat',sv:'Banor',en:'Tracks'},
+  tracks_intro:{fi:'Radat, joilla Robin on ajanut tai todennäköisesti ajaa seuraavaksi. Ratakartat on piirretty OpenStreetMapin aineistosta.',sv:'Banorna där Robin har kört eller troligen kör härnäst. Bankartorna är ritade ur OpenStreetMap-data.',en:'Circuits Robin has raced at or is likely to race at next. Layouts are drawn from OpenStreetMap data.'},
+  len_h:{fi:'Radan pituus',sv:'Banlängd',en:'Track length'},
+  t_len:{fi:'Pituus',sv:'Längd',en:'Length'},
+  t_width:{fi:'Leveys',sv:'Bredd',en:'Width'},
+  t_corners:{fi:'Mutkia',sv:'Kurvor',en:'Corners'},
+  t_dir:{fi:'Suunta',sv:'Riktning',en:'Direction'},
+  t_record:{fi:'Ennätys',sv:'Rekord',en:'Record'},
+  t_robin:{fi:'Robin täällä',sv:'Robin här',en:'Robin here'},
+  t_notable:{fi:'Historiaa',sv:'Historia',en:'History'},
+  sat:{fi:'Satelliittikuva',sv:'Satellitbild',en:'Satellite view'},
+  kimi_track:{fi:'Kimin nimikkorata',sv:'Bär Kimis namn',en:'Named after Kimi'},
+  // ladder
+  f1_title:{fi:'Tie F1:een',sv:'Vägen till F1',en:'Road to F1'},
+  f1_intro:{fi:'Aikaisin mahdollinen vuosi kullekin portaalle Robinin iän ja FIA:n ikärajojen mukaan. Todellisuudessa harva etenee aikaisimmalla aikataululla.',sv:'Tidigast möjliga år för varje steg utifrån Robins ålder och FIA:s åldersgränser. I verkligheten går få den snabbaste vägen.',en:'Earliest possible year for each step based on Robin\'s age and FIA age limits. In reality few drivers take the fastest route.'},
+  earliest:{fi:'aikaisintaan',sv:'tidigast',en:'earliest'},
+  robin_now:{fi:'Robin nyt',sv:'Robin nu',en:'Robin now'},
+  done_step:{fi:'ajettu',sv:'avklarat',en:'done'},
+  min_age:{fi:'Alaikäraja',sv:'Minimiålder',en:'Minimum age'},
+  typical:{fi:'Tyypillisesti',sv:'Typiskt',en:'Typically'},
+  sl_h:{fi:'Superlisenssi',sv:'Superlicens',en:'Super licence'},
+  rbjt_h:{fi:'Red Bull Junior Team',sv:'Red Bull Junior Team',en:'Red Bull Junior Team'},
+  grads_h:{fi:'Kuuluisia valmistuneita',sv:'Kända produkter',en:'Famous graduates'},
+  dropped_h:{fi:'Pudotetut',sv:'De som petades',en:'Dropped along the way'},
+  roster_h:{fi:'Juniorit 2026',sv:'Juniorer 2026',en:'Juniors in 2026'},
+  finns_jr_h:{fi:'Suomalaisia portailla nyt',sv:'Finländare på stegen nu',en:'Finns on the ladder now'},
+  rules_h:{fi:'Karting-säännöt faneille',sv:'Kartingregler för fans',en:'Karting rules for fans'},
+  // kimi
+  kimi_title:{fi:'Kimi & Robin',sv:'Kimi & Robin',en:'Kimi & Robin'},
+  kimi_intro:{fi:'Isä ajoi F1:een lähes suoraan karting-radalta. Poika aloitti nuorempana ja on jo Red Bullin kirjoilla.',sv:'Pappan tog sig till F1 nästan direkt från kartingbanan. Sonen började yngre och är redan kontrakterad av Red Bull.',en:'The father went to F1 almost straight from karting. The son started younger and is already signed by Red Bull.'},
+  k_starts:{fi:'GP-starttia',sv:'GP-starter',en:'GP starts'},
+  k_wins:{fi:'Voittoa',sv:'Segrar',en:'Wins'},
+  k_poles:{fi:'Paalua',sv:'Pole',en:'Poles'},
+  k_podiums:{fi:'Palkintopallia',sv:'Pallplatser',en:'Podiums'},
+  k_fl:{fi:'Nopeinta kierrosta',sv:'Snabbaste varv',en:'Fastest laps'},
+  k_title:{fi:'Maailmanmestari',sv:'Världsmästare',en:'World champion'},
+  vs_h:{fi:'Rinnakkain',sv:'Sida vid sida',en:'Side by side'},
+  th_topic:{fi:'Aihe',sv:'Ämne',en:'Topic'},
+  path_h:{fi:'Kimin tie F1:een',sv:'Kimis väg till F1',en:'Kimi\'s road to F1'},
+  quote_h:{fi:'Bwoah-kone',sv:'Bwoah-maskinen',en:'The Bwoah machine'},
+  quote_btn:{fi:'Bwoah – uusi sitaatti',sv:'Bwoah – nytt citat',en:'Bwoah – another quote'},
+  finns_h:{fi:'Lentävät suomalaiset F1:ssä',sv:'Flygande finnar i F1',en:'Flying Finns in F1'},
+  role_h:{fi:'Kimi varikolla nyt',sv:'Kimi i depån i dag',en:'Kimi in the paddock today'},
+  helmet_h:{fi:'Kypärät ja numerot',sv:'Hjälmar och nummer',en:'Helmets and numbers'},
+  nick_h:{fi:'Lempinimet',sv:'Smeknamn',en:'Nicknames'},
+  // quiz
+  quiz_title:{fi:'Visa',sv:'Quiz',en:'Quiz'},
+  quiz_intro:{fi:'Kuinka hyvin tunnet Räikköset? Tulos tallentuu vain omaan selaimeesi.',sv:'Hur väl känner du familjen Räikkönen? Resultatet sparas bara i din egen webbläsare.',en:'How well do you know the Räikkönens? Your score is saved in your own browser only.'},
+  q_of:{fi:'Kysymys',sv:'Fråga',en:'Question'},
+  q_count:{fi:'kysymystä',sv:'frågor',en:'questions'},
+  q_next:{fi:'Seuraava',sv:'Nästa',en:'Next'},
+  q_finish:{fi:'Katso tulos',sv:'Se resultatet',en:'See result'},
+  q_again:{fi:'Uudestaan',sv:'Igen',en:'Play again'},
+  q_right:{fi:'Oikein!',sv:'Rätt!',en:'Correct!'},
+  q_wrong:{fi:'Ei aivan.',sv:'Inte riktigt.',en:'Not quite.'},
+  q_score:{fi:'Pisteesi',sv:'Dina poäng',en:'Your score'},
+  q_best:{fi:'Paras tuloksesi',sv:'Ditt bästa',en:'Your best'},
+  q_v0:{fi:'Bwoah. Kerrataan Tekniikka-sivu ja yritetään uudestaan.',sv:'Bwoah. Läs Teknik-sidan och försök igen.',en:'Bwoah. Read the Tech page and try again.'},
+  q_v1:{fi:'Hyvä tahti – vielä muutama kierros harjoitusta.',sv:'Bra tempo – några träningsvarv till.',en:'Good pace – a few more practice laps.'},
+  q_v2:{fi:'Paalupaikka! Olet aito Iceman-fani.',sv:'Pole position! Du är ett äkta Iceman-fan.',en:'Pole position! A true Iceman fan.'},
+  // footer
+  foot_1:{fi:'Epävirallinen fanisivu. Ei yhteyttä Räikkösen perheeseen, Red Bulliin, kilpasarjoihin tai talleihin.',sv:'Inofficiell fansida. Ingen koppling till familjen Räikkönen, Red Bull, serierna eller teamen.',en:'Unofficial fan page. Not affiliated with the Räikkönen family, Red Bull, any series or team.'},
+  foot_2:{fi:'Tiedot koottu julkisista lähteistä; jokaisen tuloksen ja uutisen lähde on linkitetty. Virheitä voi esiintyä.',sv:'Uppgifterna är hämtade ur offentliga källor; varje resultat och nyhet länkar till sin källa. Fel kan förekomma.',en:'Compiled from public sources; every result and story links to its source. Errors may occur.'},
+  credits_h:{fi:'Kuvat, kartat ja kuvakkeet',sv:'Bilder, kartor och ikoner',en:'Photos, maps and icons'},
+  credits_note:{fi:'Kuvia on rajattu ja pienennetty. Ratakartat on piirretty OpenStreetMap-aineistosta.',sv:'Bilderna är beskurna och förminskade. Bankartorna är ritade ur OpenStreetMap-data.',en:'Photos have been cropped and resized. Track maps are drawn from OpenStreetMap data.'},
+  updated:{fi:'Päivitetty',sv:'Uppdaterad',en:'Updated'},
+  checked:{fi:'Tarkistettu automaattisesti',sv:'Automatiskt kontrollerad',en:'Automatically checked'},
+  auto_tag:{fi:'AUTO',sv:'AUTO',en:'AUTO'},
+  auto_res_tip:{fi:'Haettu automaattisesti virallisesta ajanottolistasta',sv:'Hämtat automatiskt ur den officiella resultatlistan',en:'Fetched automatically from the official timing sheet'},
+  auto_news_tip:{fi:'Haettu automaattisesti julkaisijan uutissyötteestä',sv:'Hämtat automatiskt ur utgivarens nyhetsflöde',en:'Fetched automatically from the publisher\'s news feed'},
+  st_latest:{fi:'Viimeisin kisa',sv:'Senaste tävlingen',en:'Latest race'},
+  st_won:{fi:'voitto',sv:'seger',en:'a win'},
+  st_pos:{fi:'sijoitus',sv:'placering',en:'finished'},
+  st_rb:{fi:'Vuodesta 2027 Robin kuuluu Red Bullin junioriohjelmaan.',sv:'Från 2027 ingår Robin i Red Bulls juniorprogram.',en:'From 2027 Robin is part of the Red Bull Junior Team.'},
+  no_data:{fi:'Tietoja ei voitu ladata.',sv:'Uppgifterna kunde inte laddas.',en:'The data could not be loaded.'}
+};
+
+/* ---------- helpers ---------- */
+function $(s, r) { return (r || document).querySelector(s); }
+function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function arr(v) { return Array.isArray(v) ? v : []; }
+function L(v) {
+  if (v == null) return '';
+  if (typeof v === 'string' || typeof v === 'number') return String(v);
+  return v[lang] != null ? v[lang] : (v.fi != null ? v.fi : (v.en != null ? v.en : (v.sv != null ? v.sv : '')));
+}
+function t(k) { var e = UI[k]; return e ? (e[lang] != null ? e[lang] : e.en) : k; }
+function yrs() { return lang === 'en' ? 'y' : lang === 'sv' ? 'år' : 'v'; }
+function ic(name, cls) {
+  var I = A.icons || {}; var s = I[name];
+  if (!s) return '';
+  return '<span class="ic' + (cls ? ' ' + cls : '') + '" aria-hidden="true">' + s + '</span>';
+}
+var LANG_FLAG = {fi:'FIN', en:'GBR', it:'ITA', sv:'SWE', de:'GER', fr:'FRA', es:'ESP', nl:'NED'};
+function flag(code) { var F = A.flags || {}; var s = F[code]; return s ? '<span class="flag" title="' + esc(code) + '">' + s + '</span>' : (code ? '<span class="mono" style="font-size:11px">' + esc(code) + '</span>' : ''); }
+function shape(id, cls) {
+  var s = A.tracks && A.tracks[id];
+  if (!s || !s.d || s.confidence === 'low') return '';
+  return '<svg class="shape ' + (cls || '') + '" viewBox="' + esc(s.viewBox) + '" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path d="' + esc(s.d) + '"/></svg>';
+}
+function photos(use) { return arr(A.photos).filter(function (p) { return p.use === use; }); }
+function photo(use, i) { var p = photos(use); return p.length ? p[(i || 0) % p.length] : null; }
+function trackPhoto(id) { return arr(A.photos).filter(function (p) { return p.trackId === id || p.use === 'track:' + id; })[0] || null; }
+function creditLine(p) {
+  if (!p) return '';
+  return t('photo') + ': ' + (p.source ? '<a href="' + esc(p.source) + '" target="_blank" rel="noopener noreferrer">' + esc(p.author || '—') + '</a>' : esc(p.author || '—')) + (p.license ? ', ' + (p.licenseUrl ? '<a href="' + esc(p.licenseUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(p.license) + '</a>' : esc(p.license)) : '');
+}
+function img(p, cls, eager) {
+  if (!p) return '';
+  var pos = {top:'center top', bottom:'center bottom', left:'left center', right:'right center'}[p.focus] || 'center';
+  return '<img class="' + (cls || '') + '" src="' + esc(p.file) + '" alt="' + esc(L(p.alt)) + '"' + (p.width ? ' width="' + p.width + '" height="' + p.height + '"' : '') + ' style="object-position:' + pos + '"' + (eager ? '' : ' loading="lazy"') + ' decoding="async">';
+}
+function todayISO() {
+  try { return new Intl.DateTimeFormat('en-CA', {timeZone:'Europe/Helsinki', year:'numeric', month:'2-digit', day:'2-digit'}).format(new Date()); }
+  catch (e) { return new Date().toISOString().slice(0, 10); }
+}
+function parseISO(s) {
+  var m = /^(\d{4})-(\d{2})(?:-(\d{2}))?/.exec(s || '');
+  if (!m) return null;
+  return {y:+m[1], m:+m[2], d:m[3] ? +m[3] : null, date:new Date(Date.UTC(+m[1], +m[2] - 1, m[3] ? +m[3] : 1, 12))};
+}
+function fmtDate(s, style) {
+  var p = parseISO(s); if (!p) return esc(s || '–');
+  var o = !p.d ? {month:'long', year:'numeric'} : style === 'short' ? {day:'numeric', month:'short'} : style === 'num' ? {day:'numeric', month:'numeric', year:'numeric'} : {day:'numeric', month:'long', year:'numeric'};
+  o.timeZone = 'UTC';
+  return esc(new Intl.DateTimeFormat(LOCALE[lang], o).format(p.date));
+}
+function fmtRange(a, b) {
+  var pa = parseISO(a), pb = parseISO(b);
+  if (!pa) return esc(a || '–');
+  if (!pb || !pa.d || !pb.d || a === b) return fmtDate(a);
+  try {
+    var f = new Intl.DateTimeFormat(LOCALE[lang], {day:'numeric', month:'long', year:'numeric', timeZone:'UTC'});
+    if (f.formatRange) return esc(f.formatRange(pa.date, pb.date));
+  } catch (e) {}
+  return fmtDate(a) + ' – ' + fmtDate(b);
+}
+function daysBetween(a, b) { var pa = parseISO(a), pb = parseISO(b); if (!pa || !pb) return null; return Math.round((pb.date - pa.date) / 864e5); }
+function byDateDesc(a, b) { return String(b.date || b.start || '').localeCompare(String(a.date || a.start || '')); }
+function byDateAsc(a, b) { return String(a.date || a.start || '').localeCompare(String(b.date || b.start || '')); }
+function posNum(v) {
+  if (v == null || v === '') return null;
+  if (typeof v === 'number') return v;
+  var m = /^\s*P?\s*(\d{1,3})\b/i.exec(String(v));
+  return m ? +m[1] : null;
+}
+function finalOf(r) { return r.finalPos != null ? r.finalPos : posNum(r.final); }
+function tier(r) {
+  var n = finalOf(r);
+  if (n == null) return /dn|ds|ret|exc|nc/i.test(String(r.final || '')) ? 'out' : 'na';
+  return n === 1 ? '1' : n === 2 ? '2' : n === 3 ? '3' : n <= 10 ? '10' : 'rest';
+}
+function posChip(v) {
+  if (v == null || v === '') return '<span class="pos pos-na">–</span>';
+  var s = String(v), n = posNum(v), cls = 'pos';
+  if (n === 1) cls += ' p1'; else if (n === 2) cls += ' p2'; else if (n === 3) cls += ' p3'; else if (n != null && n <= 10) cls += ' p10';
+  else if (n == null && /dn|ds|ret|exc|nc/i.test(s)) cls += ' pout';
+  var label = (n != null && /^\s*P?\s*\d{1,3}\s*$/i.test(s)) ? 'P' + n : s;
+  return '<span class="' + cls + '">' + esc(label) + '</span>';
+}
+function srcLink(u) { return u ? '<a class="src" href="' + esc(u) + '" target="_blank" rel="noopener noreferrer" title="' + esc(hostOf(u)) + '">' + (ic('arrow-up-right') || '↗') + '</a>' : ''; }
+function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } }
+function trackById(id) { return arr(D.tracks).filter(function (x) { return x.id === id; })[0]; }
+function trackBtn(id, name) {
+  var tr = id && trackById(id);
+  var label = name || (tr && tr.name) || '–';
+  return tr ? '<button type="button" class="trk-link" data-track="' + esc(id) + '">' + esc(label) + '</button>' : esc(label);
+}
+function ageNow() {
+  var p = parseISO(D.driver && D.driver.born); if (!p) return null;
+  var today = parseISO(todayISO());
+  var age = today.y - p.y;
+  if (p.d && (today.m < p.m || (today.m === p.m && today.d < p.d))) age--;
+  return age;
+}
+function isTitle(x) { return x.kind ? x.kind === 'title' : false; }
+function stats() {
+  var r = arr(D.results); var f = r.map(finalOf).filter(function (n) { return n != null; });
+  return {events:r.length, wins:f.filter(function (n) { return n === 1; }).length, podiums:f.filter(function (n) { return n <= 3; }).length, titles:arr(D.titles).filter(isTitle).length};
+}
+function upcoming() {
+  var today = todayISO();
+  return arr(D.calendar).filter(function (e) { return String(e.end || e.start || '') >= today; }).sort(byDateAsc);
+}
+function nextEvent() {
+  var u = upcoming();
+  var firm = u.filter(function (e) { return e.status === 'confirmed' || e.status === 'likely'; });
+  return firm[0] || u[0] || null;
+}
+function quoteBlock(q) {
+  if (!q) return '';
+  var same = q.lang === lang;
+  var shown = same ? q.text : (q.tr && q.tr[lang]) || q.text;
+  var orig = (!same && q.text && shown !== q.text) ? '<p class="orig">' + t('original') + ' (' + esc(q.lang || '') + '): “' + esc(q.text) + '”</p>' : '';
+  var who = [q.who, q.year || (q.date ? fmtDate(q.date) : ''), L(q.context)].filter(Boolean).map(esc).join(' · ');
+  return '<figure class="quote"><blockquote>' + esc(shown) + '</blockquote>' + orig + '<figcaption>' + who + (q.source ? ' ' + srcLink(q.source) : '') + '</figcaption></figure>';
+}
+function banner(use, title, intro, icon, idx) {
+  var p = (use && typeof use === 'object') ? use : photo(use, idx);
+  if (!p) return '<div class="plainhead"><p class="eyebrow">' + ic(icon) + '</p><h2>' + title + '</h2>' + (intro ? '<p class="muted" style="max-width:62ch">' + intro + '</p>' : '') + '</div>';
+  return '<header class="dark-media banner">' + img(p, 'bg', true) + '<p class="eyebrow">' + ic(icon) + '</p><h2>' + title + '</h2>' + (intro ? '<p class="intro">' + intro + '</p>' : '') + '<p class="ph-credit">' + creditLine(p) + '</p></header>';
+}
+
+/* ---------- automatic data (nightly updater, no AI) ---------- */
+function normUrl(u) { return String(u || '').replace(/^https?:\/\/(www\.)?/, '').replace(/[?#].*$/, '').replace(/\/$/, '').toLowerCase(); }
+function normHead(h) { return String(h || '').toLowerCase().replace(/[^a-z0-9äöåü]+/g, ''); }
+function sameEvent(a, b) {
+  var d = daysBetween(a.date, b.date); if (d == null || Math.abs(d) > 2) return false;
+  return (a.trackId && a.trackId === b.trackId) || String(a.series || '').toLowerCase() === String(b.series || '').toLowerCase();
+}
+function mergeAuto() {
+  if (!AU) return;
+  var su = {}, sh = {};
+  arr(D.news).forEach(function (n) { su[normUrl(n.url)] = 1; sh[normHead(n.headline)] = 1; });
+  D.news = arr(D.news).concat(arr(AU.news).filter(function (n) { return n && n.url && !su[normUrl(n.url)] && !sh[normHead(n.headline)]; }));
+  var cur = arr(D.results);
+  D.results = cur.concat(arr(AU.results).filter(function (r) { return r && parseISO(r.date) && !cur.some(function (c) { return sameEvent(c, r); }); }));
+  if (AU.battle && arr(AU.battle.rows).length && (!D.battle || String(AU.battle.asOf || '') >= String(D.battle.asOf || CURATED_DATE))) {
+    var keep = D.battle || {}; D.battle = AU.battle;
+    if (!D.battle.decider && keep.decider) D.battle.decider = keep.decider;
+  }
+  if (!D.meta) D.meta = {};
+  if (AU.updated && AU.updated > (D.meta.updated || '')) D.meta.updated = AU.updated;
+  // curated status is outdated once a newer race result has arrived automatically
+  var newest = arr(D.results).slice().sort(byDateDesc)[0];
+  if (newest && newest.auto && newest.date > CURATED_DATE && D.driver) {
+    var n = finalOf(newest), tr = trackById(newest.trackId);
+    var place = function (l) { return n === 1 ? UI.st_won[l] : (UI.st_pos[l] + ' ' + (n != null ? n + '.' : newest.final)); };
+    var line = function (l) { return UI.st_latest[l] + ' (' + newest.date.split('-').reverse().join('.') + '): ' + newest.series + (newest.round ? ' ' + newest.round : '') + ', ' + ((tr && (tr.short || tr.name)) || newest.track || '') + ' – ' + place(l) + '. ' + UI.st_rb[l]; };
+    D.driver.status = {fi: line('fi'), sv: line('sv'), en: line('en')};
+  }
+}
+function autoTag(tipKey) { return '<span class="chip" style="padding:1px 6px;font-size:10px" title="' + esc(t(tipKey)) + '">' + t('auto_tag') + '</span>'; }
+
+/* ---------- state ---------- */
+var S = {view:'paddock', resYear:'all', newsCat:'all', part:'engine', metric:'hp', showRef:false, gloss:'', fact:0, q:0, quiz:{i:0, score:0, picked:null, done:false}};
+function allFacts() { return arr(D.facts).concat(arr(D.tech && D.tech.facts)); }
+
+/* ---------- shared blocks ---------- */
+function battleBlock(compact) {
+  var B = D.battle; if (!B || !arr(B.rows).length) return '';
+  var rows = B.rows.slice().sort(function (a, b) { return b.points - a.points; });
+  var max = rows[0].points || 1;
+  var me = rows.filter(function (r) { return r.robin; })[0];
+  var gap = me ? me.points - rows[0].points : null;
+  var lead = me && rows[0] === me && rows[1] ? me.points - rows[1].points : null;
+  var dec = B.decider || {};
+  if (dec.date && dec.date < todayISO()) { if (compact && daysBetween(dec.date, todayISO()) > 45) return ''; dec = {}; }
+  return '<section class="panel lift"><div class="sec-head"><div style="display:grid;gap:6px"><p class="eyebrow">' + ic('trophy') + esc(L(B.series)) + '</p><h3 style="font-size:26px;font-style:italic;font-weight:850;font-stretch:74%;text-transform:uppercase">' + t('battle_h') + '</h3><p class="muted" style="font-size:14px">' + esc(L(B.after)) + '</p></div>' +
+    (dec.date ? '<span class="chip st-likely">' + ic('flag-checkered') + t('battle_decider') + ' ' + fmtDate(dec.date, 'short') + ' · ' + esc((trackById(dec.trackId) || {}).short || (trackById(dec.trackId) || {}).name || '') + '</span>' : '') + '</div>' +
+    '<div class="battle"><div class="brows">' + rows.map(function (r, i) {
+      return '<div class="brow' + (r.robin ? ' robin' : '') + '"><span class="bn"><i>' + (i + 1) + '</i>' + esc(r.name) + '</span><span class="bt"><span class="bf" style="width:' + (r.points / max * 100).toFixed(1) + '%"></span></span><span class="bp">' + esc(r.points) + '</span></div>';
+    }).join('') + '</div>' +
+    (gap != null ? '<div class="gapbox"><b>' + (lead != null ? '+' + lead : (gap === 0 ? '±0' : gap)) + ' ' + t('pts') + '</b><span>' + (lead != null ? t('battle_lead') : t('battle_gap')) + '</span></div>' : '') + '</div>' +
+    (compact ? '' : (L(B.note) ? '<p class="muted" style="font-size:14px;max-width:75ch">' + esc(L(B.note)) + ' ' + arr(B.sources).slice(0, 2).map(srcLink).join(' ') + '</p>' : '')) + '</section>';
+}
+
+/* ---------- views ---------- */
+function vPaddock() {
+  var d = D.driver || {}, st = stats(), age = ageNow(), nx = nextEvent();
+  var latest = arr(D.results).slice().sort(byDateDesc).slice(0, 6);
+  var news = arr(D.news).slice().sort(byDateDesc).slice(0, 4);
+  var cur = d.current || {};
+  var rb = D.redbull || {};
+  var hp = photo('hero');
+  var eyebrow = [flag(d.nationality) + ' ' + (d.nationality === 'FIN' ? 'Suomi' : esc(d.nationality || '')), d.born ? t('born') + ' ' + (parseISO(d.born) || {}).y : '', d.number ? '#' + esc(d.number) : ''].filter(Boolean).join(' · ');
+  var facts = allFacts(); var fact = facts.length ? facts[S.fact % facts.length] : null;
+
+  var h = '<section class="dark-media hero">' + (hp ? img(hp, 'bg', true) : '') +
+    '<div class="hero-in"><div class="hero-id">' + (d.number ? '<div class="ghost-num" aria-hidden="true">' + esc(d.number) + '</div>' : '') +
+      '<p class="eyebrow">' + eyebrow + '</p>' +
+      '<h1 class="mega"><span>Robin</span><span>Räikkönen</span></h1>' +
+      (d.status ? '<p class="lede">' + esc(L(d.status)) + '</p>' : '') +
+      '<div class="chips">' + (rb.starts ? '<span class="chip rb">Red Bull Junior Team · ' + esc(rb.starts) + '</span>' : '') +
+        [cur.class, cur.team, cur.chassis].filter(Boolean).map(function (x) { return '<span class="chip">' + esc(x) + '</span>'; }).join('') + '</div>' +
+    '</div>' + nextCard(nx) + '</div>' + (hp ? '<p class="ph-credit">' + creditLine(hp) + '</p>' : '') + '</section>';
+
+  h += '<div class="strip" title="' + esc(t('stat_note')) + '">' +
+    '<div>' + ic('flag-checkered') + '<b>' + st.events + '</b><span>' + t('stat_events') + '</span></div>' +
+    '<div>' + ic('trophy') + '<b>' + st.wins + '</b><span>' + t('stat_wins') + '</span></div>' +
+    '<div>' + ic('medal') + '<b>' + st.podiums + '</b><span>' + t('stat_podiums') + '</span></div>' +
+    '<div>' + ic('crown') + '<b>' + st.titles + '</b><span>' + (st.titles === 1 ? t('stat_titles') : t('stat_titles_pl')) + '</span></div>' +
+    (age != null ? '<div>' + ic('stopwatch') + '<b>' + age + '</b><span>' + t('stat_age') + '</span></div>' : '') + '</div>';
+
+  h += battleBlock(true);
+
+  h += '<div class="grid-2">' +
+    '<section class="panel"><div class="sec-head"><h3 class="h3i">' + ic('stopwatch') + t('latest_results') + '</h3><a class="link-more" href="#tulokset">' + t('all_results') + ic('arrow-right') + '</a></div>' +
+      (latest.length ? '<ol class="tower">' + latest.map(function (r) {
+        return '<li>' + posChip(r.final) + '<div class="ev"><b>' + esc(r.series) + (r.round ? ' · ' + esc(r.round) : '') + '</b><small>' + flag(r.country) + trackBtn(r.trackId, r.track) + ' · ' + esc(r.class || '') + '</small></div><time>' + fmtDate(r.date, 'short') + '</time></li>';
+      }).join('') + '</ol>' : '<p class="empty">' + t('no_results') + '</p>') + '</section>' +
+    '<section class="panel"><div class="sec-head"><h3 class="h3i">' + ic('newspaper') + t('latest_news') + '</h3><a class="link-more" href="#uutiset">' + t('all_news') + ic('arrow-right') + '</a></div>' + newsList(news, true) + '</section>' +
+  '</div>';
+
+  h += '<div class="grid-2">';
+  if (rb.announced || rb.summary) {
+    h += '<section class="panel lift"><p class="eyebrow">' + ic('star') + t('announced') + ' ' + fmtDate(rb.announced) + '</p><h3 style="font-size:30px;font-style:italic;font-weight:850;font-stretch:72%;text-transform:uppercase">' + t('rb_title') + (rb.starts ? ' · ' + esc(rb.starts) : '') + '</h3>' +
+      '<p>' + esc(L(rb.summary)) + '</p>' + (arr(rb.quotes)[0] ? quoteBlock(rb.quotes[0]) : '') +
+      '<a class="link-more" href="#tie-f1">' + t('nav-tie-f1') + ic('arrow-right') + '</a></section>';
+  }
+  if (fact) {
+    h += '<section class="panel"><p class="eyebrow">' + ic('lightning') + t('did_you_know') + '</p><p style="font:600 clamp(18px,2.2vw,22px)/1.38 var(--f-body)">' + esc(L(fact.text || fact)) + '</p>' +
+      '<button type="button" class="btn ghost" data-act="fact">' + t('another_fact') + '</button></section>';
+  }
+  h += '</div>';
+  return h;
+}
+
+function nextCard(e) {
+  if (!e) return '<aside class="next"><p class="eyebrow">' + t('next_race') + '</p><p>' + t('no_next') + '</p></aside>';
+  var today = todayISO();
+  var d = daysBetween(today, e.start);
+  var on = d != null && d <= 0 && String(e.end || e.start) >= today;
+  var count = on ? '<div class="count"><b>●</b><span>' + t('race_on') + '</span></div>'
+    : '<div class="count"><b class="mono">' + (d == null ? '?' : d) + '</b><span>' + (d === 1 ? t('day') : t('days')) + ' ' + t('to_go') + '</span></div>';
+  var tr = trackById(e.trackId) || {};
+  return '<aside class="next" aria-label="' + esc(t('next_race')) + '">' + (shape(e.trackId, 'nshape') ) + '<div style="display:grid;gap:8px"><p class="eyebrow">' + ic('flag-checkered') + t('next_race') + '</p>' +
+    '<h3>' + esc(L(e.name) || e.series) + '</h3></div>' + count +
+    '<dl><dt>' + t('when') + '</dt><dd>' + fmtRange(e.start, e.end) + '</dd>' +
+    '<dt>' + t('where') + '</dt><dd>' + flag(e.country) + ' ' + esc(tr.name || e.track || '–') + '</dd>' +
+    (e.class ? '<dt>' + t('cls') + '</dt><dd>' + esc(e.class) + '</dd>' : '') +
+    '<dt>' + t('status') + '</dt><dd><span class="chip">' + t('st-' + (e.status || 'unknown')) + '</span></dd></dl>' +
+    '<a class="link-more" style="color:var(--snow)" href="#kalenteri">' + t('nav-kalenteri') + ic('arrow-right') + '</a></aside>';
+}
+
+var CAT_IC = {result:'trophy', signing:'star', injury:'warning', interview:'quote', feature:'newspaper', other:'info'};
+function newsMeta(n) {
+  return '<span class="cat">' + ic(CAT_IC[n.category] || 'info') + t('cat-' + (n.category || 'other')) + '</span><time>' + fmtDate(n.date) + '</time><span>' + esc(n.source || hostOf(n.url)) + '</span>' + (n.lang ? flag(LANG_FLAG[n.lang] || '') : '') + (n.auto ? autoTag('auto_news_tip') : '');
+}
+function newsList(items, compact) {
+  if (!items.length) return '<p class="empty">–</p>';
+  return '<ul class="news">' + items.map(function (n) {
+    return '<li><div class="meta">' + newsMeta(n) + '</div>' +
+      '<h4><a href="' + esc(n.url) + '" target="_blank" rel="noopener noreferrer">' + esc(n.headline) + '</a></h4>' +
+      (compact || !L(n.summary) ? '' : '<p>' + esc(L(n.summary)) + '</p>') + '</li>';
+  }).join('') + '</ul>';
+}
+
+function vResults() {
+  var all = arr(D.results).slice().sort(byDateDesc);
+  var yearOf = function (r) { return String(r.year || (r.date || '').slice(0, 4)); };
+  var years = Array.from(new Set(all.map(yearOf))).filter(Boolean).sort().reverse();
+  var h = banner('results', t('res_title'), t('res_intro'), 'trophy');
+
+  h += battleBlock(false);
+
+  // career grid
+  var seasons = {}; arr(D.seasons).forEach(function (s) { seasons[String(s.year)] = s; });
+  h += '<section class="panel"><div class="sec-head"><h3 class="h3i">' + ic('flag-checkered') + t('grid_h') + '</h3><div class="legend">' +
+    '<span><i style="background:var(--gold)"></i>' + t('lg_win') + '</span><span><i style="background:linear-gradient(90deg,var(--silver) 50%,var(--bronze) 50%)"></i>' + t('lg_pod') + '</span><span><i style="background:var(--blue-soft);box-shadow:inset 0 0 0 1px var(--blue)"></i>' + t('lg_top') + '</span><span><i style="background:var(--surface-2);box-shadow:inset 0 0 0 1px var(--line)"></i>' + t('lg_rest') + '</span><span><i style="background:var(--kerb-soft);box-shadow:inset 0 0 0 1px var(--kerb)"></i>' + t('lg_out') + '</span></div></div>' +
+    '<div class="cgrid">' + years.map(function (y) {
+      var rs = all.filter(function (r) { return yearOf(r) === y; }).slice().sort(byDateAsc);
+      var fs = rs.map(finalOf).filter(function (n) { return n != null; });
+      var w = fs.filter(function (n) { return n === 1; }).length, p = fs.filter(function (n) { return n <= 3; }).length;
+      var s = seasons[y] || {};
+      return '<div class="crow"><div class="cy"><b>' + esc(y) + '</b><span>' + esc(arr(s.classes).join(' · ') || '') + '</span></div>' +
+        '<div class="tiles">' + rs.map(function (r) {
+          var tr = tier(r); var n = finalOf(r);
+          var label = n != null ? n : (/dns/i.test(r.final) ? 'NS' : /dnq/i.test(r.final) ? 'NQ' : '×');
+          return '<button type="button" class="tile t' + tr + '" data-res="' + esc(r.id) + '" title="' + esc(fmtDate(r.date, 'num') + ' · ' + r.series + (r.round ? ' ' + r.round : '') + ' · ' + (r.track || '') + ' · ' + (r.final || '–')) + '">' + esc(label) + '</button>';
+        }).join('') + '</div>' +
+        '<div class="ctot"><span>' + ic('flag-checkered') + rs.length + '</span><span>' + ic('trophy') + w + '</span><span>' + ic('medal') + p + '</span></div>' +
+        (L(s.summary) ? '<details class="more story"><summary>' + t('story') + '</summary><div><p>' + esc(L(s.summary)) + '</p>' + ([].concat(arr(s.teams), arr(s.chassis), arr(s.engines)).length ? '<p class="mono" style="font-size:12px;color:var(--ink-3)">' + esc([].concat(arr(s.teams), arr(s.chassis), arr(s.engines)).join(' · ')) + '</p>' : '') + '</div></details>' : '') +
+        '</div>';
+    }).join('') + '</div></section>';
+
+  // trophies
+  var titles = arr(D.titles).slice().sort(function (a, b) { return (isTitle(b) - isTitle(a)) || (b.year - a.year); });
+  if (titles.length) {
+    h += '<section style="display:grid;gap:12px"><h3 class="h3i">' + ic('crown') + t('titles_h') + '</h3><div class="trophies">' + titles.map(function (x) {
+      return '<article class="trophy' + (isTitle(x) ? ' title' : '') + '"><span class="ti">' + ic(isTitle(x) ? 'crown' : 'medal') + '</span><div style="display:grid;gap:4px"><b class="mono">' + esc(x.year) + '</b><p>' + esc(L(x.title)) + ' ' + srcLink(arr(x.sources)[0]) + '</p></div></article>';
+    }).join('') + '</div></section>';
+  }
+
+  var chart = finalsChart(all);
+  if (chart) h += '<section class="panel"><div class="sec-head"><h3 class="h3i">' + ic('gauge') + t('chart_title') + '</h3><p class="muted" style="font-size:13px">' + t('chart_note') + '</p></div>' + chart + '</section>';
+
+  // race cards
+  var rows = S.resYear === 'all' ? all : all.filter(function (r) { return yearOf(r) === S.resYear; });
+  h += '<section style="display:grid;gap:12px"><div class="sec-head"><h3 class="h3i">' + ic('stopwatch') + t('race_list') + '</h3><div class="filters" role="group">' + ['all'].concat(years).map(function (y) {
+    return '<button type="button" data-year="' + esc(y) + '" aria-pressed="' + (S.resYear === y) + '">' + (y === 'all' ? t('all') : esc(y)) + '</button>';
+  }).join('') + '</div></div>';
+  if (!rows.length) h += '<p class="empty">' + t('no_results') + '</p>';
+  var lastY = null;
+  h += '<div class="races">' + rows.map(function (r) {
+    var y = yearOf(r), head = '';
+    if (y !== lastY) { var cnt = rows.filter(function (x) { return yearOf(x) === y; }).length; head = '<div class="yearhead"><b>' + esc(y) + '</b><span>' + cnt + ' ' + t('races_s') + '</span></div>'; lastY = y; }
+    var extra = [r.team, r.chassis, r.engine].filter(Boolean).join(' · ');
+    return head + '<article class="race" id="res-' + esc(r.id) + '">' + posChip(r.final) +
+      '<div class="race-main"><div class="race-top"><b>' + esc(r.series) + (r.round ? ' · ' + esc(r.round) : '') + '</b><time>' + fmtDate(r.date) + '</time>' + (r.auto ? autoTag('auto_res_tip') : '') + '</div>' +
+      '<div class="race-sub">' + flag(r.country) + trackBtn(r.trackId, r.track) + '<span>' + esc(r.class || '') + '</span>' + (r.fieldSize ? '<span class="mono" style="font-size:12px">' + esc(r.fieldSize) + ' ' + t('field') + '</span>' : '') + '</div>' +
+      '<div class="tstrip"><span><small>' + t('ts_q') + '</small><b>' + esc(r.quali || '–') + '</b></span><span><small>' + t('ts_h') + '</small><b>' + esc(r.heats || '–') + '</b></span><span><small>' + t('ts_pf') + '</small><b>' + esc(r.prefinal || '–') + '</b></span><span><small>' + t('ts_f') + '</small><b>' + esc(r.final || '–') + '</b></span></div></div>' +
+      '<div class="race-shape">' + shape(r.trackId) + '</div>' +
+      ((L(r.note) || L(r.champ) || extra || arr(r.sources).length) ? '<details class="more"><summary>' + t('more') + '</summary><div>' + (L(r.note) ? '<p>' + esc(L(r.note)) + '</p>' : '') +
+        (L(r.champ) ? '<p><span class="lbl-mini">' + t('th_champ') + '</span>' + esc(L(r.champ)) + '</p>' : '') +
+        (extra ? '<p class="mono" style="font-size:12px">' + esc(extra) + '</p>' : '') +
+        (arr(r.sources).length ? '<p><span class="lbl-mini">' + t('th_src') + '</span>' + arr(r.sources).slice(0, 4).map(function (u) { return '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer" style="margin-right:10px;font-size:13px">' + esc(hostOf(u)) + '</a>'; }).join('') + '</p>' : '') +
+        '</div></details>' : '') + '</article>';
+  }).join('') + '</div></section>';
+  return h;
+}
+
+function finalsChart(rows) {
+  var pts = rows.filter(function (r) { return finalOf(r) != null && parseISO(r.date); }).slice().sort(byDateAsc);
+  if (pts.length < 3) return '';
+  var W = 760, H = 250, pl = 44, pr = 18, pt = 16, pb = 36;
+  var maxP = Math.max(10, Math.ceil(Math.max.apply(null, pts.map(finalOf)) / 5) * 5);
+  var n = pts.length;
+  function x(i) { return pl + (n === 1 ? 0 : i / (n - 1)) * (W - pl - pr); }
+  function y(p) { return pt + (p - 1) / (maxP - 1) * (H - pt - pb); }
+  var ticks = [1]; for (var k = 5; k <= maxP; k += 5) ticks.push(k);
+  var g = ticks.map(function (k) { return '<line class="grid" x1="' + pl + '" x2="' + (W - pr) + '" y1="' + y(k) + '" y2="' + y(k) + '"/><text x="' + (pl - 8) + '" y="' + (y(k) + 4) + '" text-anchor="end">P' + k + '</text>'; }).join('');
+  var lastY = null, xl = '';
+  var lastX = -99;
+  pts.forEach(function (p, i) { var yr = p.date.slice(0, 4); if (yr !== lastY) { xl += '<line class="grid" x1="' + x(i) + '" x2="' + x(i) + '" y1="' + pt + '" y2="' + (H - pb) + '" stroke-dasharray="2 4"/>' + (x(i) - lastX > 44 ? '<text x="' + x(i) + '" y="' + (H - 12) + '" text-anchor="' + (i === 0 ? 'start' : 'middle') + '">' + yr + '</text>' : ''); if (x(i) - lastX > 44) lastX = x(i); lastY = yr; } });
+  var line = pts.map(function (p, i) { return x(i).toFixed(1) + ',' + y(finalOf(p)).toFixed(1); }).join(' ');
+  var area = 'M' + x(0).toFixed(1) + ',' + y(maxP).toFixed(1) + ' L' + line.split(' ').join(' L') + ' L' + x(n - 1).toFixed(1) + ',' + y(maxP).toFixed(1) + ' Z';
+  var dots = pts.map(function (p, i) {
+    var f = finalOf(p); var col = f === 1 ? 'var(--gold)' : f === 2 ? 'var(--silver)' : f === 3 ? 'var(--bronze)' : 'var(--surface)';
+    return '<circle cx="' + x(i).toFixed(1) + '" cy="' + y(f).toFixed(1) + '" r="' + (f <= 3 ? 6.5 : 4.5) + '" fill="' + col + '" stroke="var(--blue)" stroke-width="2"><title>' + esc(p.date + ' · ' + p.series + (p.round ? ' ' + p.round : '') + ' · ' + (p.track || '') + ' · P' + f) + '</title></circle>';
+  }).join('');
+  return '<div style="overflow-x:auto"><svg class="chart" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(t('chart_title')) + '" style="min-width:520px">' + g + xl +
+    '<path class="area" d="' + area + '"/><polyline class="line" points="' + line + '"/>' + dots + '</svg></div>';
+}
+
+function gcalLink(e) {
+  var s = parseISO(e.start); if (!s || !s.d) return '';
+  var en = parseISO(e.end || e.start) || s;
+  var end = new Date(en.date.getTime() + 864e5);
+  function ymd(d) { return d.toISOString().slice(0, 10).replace(/-/g, ''); }
+  var title = 'Robin Räikkönen: ' + (L(e.name) || e.series) + (e.class ? ' (' + e.class + ')' : '');
+  var tr = trackById(e.trackId);
+  var loc = tr ? [tr.name, tr.town, tr.country].filter(Boolean).join(', ') : (e.track || '');
+  var u = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(title) + '&dates=' + ymd(s.date) + '/' + ymd(end) + '&location=' + encodeURIComponent(loc) + '&details=' + encodeURIComponent(L(e.note) || '');
+  return '<a class="link-more" href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + ic('calendar-plus') + t('add_cal') + '</a>';
+}
+
+function calItem(e, isNext) {
+  var s = parseISO(e.start), en = parseISO(e.end);
+  var dayTxt = s && s.d ? (en && en.d && (en.d !== s.d || en.m !== s.m) ? s.d + (en.m !== s.m ? '.' + s.m + '.' : '') + '–' + en.d + '.' : s.d + '.') : '–';
+  var mon = s ? new Intl.DateTimeFormat(LOCALE[lang], {month:'short', year:'numeric', timeZone:'UTC'}).format((en || s).date) : '';
+  return '<li class="' + (isNext ? 'is-next' : '') + '"><div class="d"><b>' + esc(dayTxt) + '</b><span>' + esc(mon) + '</span></div><div class="body">' +
+    '<div class="row"><span class="chip st-' + esc(e.status || 'unknown') + '">' + t('st-' + (e.status || 'unknown')) + '</span>' + (e.class ? '<span class="mono" style="font-size:13px">' + esc(e.class) + '</span>' : '') + '</div>' +
+    '<h3>' + esc(L(e.name) || e.series) + (e.round ? ' · ' + esc(e.round) : '') + '</h3>' +
+    '<div class="row"><span style="display:inline-flex;gap:6px;align-items:center">' + flag(e.country) + trackBtn(e.trackId, e.track) + '</span>' + gcalLink(e) + arr(e.sources).slice(0, 2).map(srcLink).join(' ') + '</div>' +
+    (L(e.note) ? '<details class="more"><summary>' + t('more') + '</summary><div><p>' + esc(L(e.note)) + '</p></div></details>' : '') + '</div>' +
+    '<div class="cshape">' + shape(e.trackId, 'bold') + '</div></li>';
+}
+
+function vCalendar() {
+  var up = upcoming(), nx = nextEvent();
+  var y27 = arr(D.calendar2027).slice().sort(byDateAsc);
+  var h = banner('results', t('cal_title'), t('cal_intro'), 'calendar', 1);
+  h += '<section style="display:grid;gap:12px"><h3 class="h3i">' + ic('flag-checkered') + t('cal_upcoming') + '</h3>' + (up.length ? '<ol class="cal">' + up.map(function (e) { return calItem(e, e === nx); }).join('') + '</ol>' : '<p class="empty">' + t('no_upcoming') + '</p>') + '</section>';
+  if (y27.length || D.plans2027) {
+    h += '<section class="panel"><h3 class="h3i">' + ic('steps') + t('cal_2027') + '</h3>' + (D.plans2027 ? '<p style="max-width:74ch">' + esc(L(D.plans2027)) + '</p>' : '') +
+      (y27.length ? '<ol class="cal">' + y27.map(function (e) { return calItem(e, false); }).join('') + '</ol>' : '') + '</section>';
+  }
+  return h;
+}
+
+function vNews() {
+  var items = arr(D.news).slice().sort(byDateDesc);
+  var cats = ['all'].concat(Array.from(new Set(items.map(function (n) { return n.category || 'other'; }))));
+  var shown = S.newsCat === 'all' ? items : items.filter(function (n) { return (n.category || 'other') === S.newsCat; });
+  var h = banner('news', t('news_title'), t('news_intro'), 'newspaper');
+  var top = shown.slice().sort(function (a, b) { return ((b.importance || 0) - (a.importance || 0)) || byDateDesc(a, b); })[0];
+  if (top && S.newsCat === 'all') {
+    h += '<article class="feature"><div class="meta">' + newsMeta(top) + '</div><h3><a href="' + esc(top.url) + '" target="_blank" rel="noopener noreferrer">' + esc(top.headline) + '</a></h3>' + (L(top.summary) ? '<p>' + esc(L(top.summary)) + '</p>' : '') + '<a class="link-more" style="color:var(--ice)" href="' + esc(top.url) + '" target="_blank" rel="noopener noreferrer">' + t('read') + ic('arrow-up-right') + '</a></article>';
+  }
+  h += '<div class="filters" role="group">' + cats.map(function (c) { return '<button type="button" data-cat="' + esc(c) + '" aria-pressed="' + (S.newsCat === c) + '">' + (c !== 'all' ? ic(CAT_IC[c] || 'info') : '') + t('cat-' + c) + '</button>'; }).join('') + '</div>';
+  h += '<div class="grid-2" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));align-items:start"><section class="panel" style="grid-column:span 2;min-width:0">' + newsList(shown.filter(function (n) { return n !== top || S.newsCat !== 'all'; }), false) + '</section>';
+  var qs = arr(D.quotes);
+  h += qs.length ? '<section class="panel"><h3 class="h3i">' + ic('quote') + t('quotes_h') + '</h3>' + qs.map(function (q) { return quoteBlock(q); }).join('<hr style="border:0;border-top:1px solid var(--line);margin:4px 0">') + '</section>' : '';
+  h += '</div>';
+  return h;
+}
+
+var PARTS = ['fairing','chassis','tyres','steering','logger','tank','seat','radiator','engine','exhaust','drive','axle','brakes'];
+var PART_PHOTO = {engine:'tech-engine', tyres:'tech-tyres', chassis:'tech-chassis', brakes:'tech-brakes', steering:'tech-steering', logger:'tech-steering'};
+function kartBlock() {
+  var K = A.kart; if (!K || !K.file) return '';
+  var hs = K.hotspots || {};
+  return '<figure style="margin:0;display:grid;gap:6px"><div class="kd">' + '<img src="' + esc(K.file) + '" alt="' + esc(t('anat_h')) + '"' + (K.width ? ' width="' + K.width + '" height="' + K.height + '"' : '') + '>' +
+    PARTS.map(function (p, i) {
+      var c = hs[p]; if (!c || !K.width) return '';
+      var a = (D.tech && D.tech.anatomy && D.tech.anatomy[p]) || {};
+      return '<button type="button" class="hs' + (S.part === p ? ' on' : '') + '" data-part="' + p + '" style="left:' + (c[0] / K.width * 100).toFixed(2) + '%;top:' + (c[1] / K.height * 100).toFixed(2) + '%" aria-label="' + esc(L(a.title) || p) + '">' + (i + 1) + '</button>';
+    }).join('') + '</div><figcaption class="credit">' + (L(K.caption) ? esc(L(K.caption)) + ' — ' : '') + creditLine(K) + '</figcaption></figure>';
+}
+
+function vTech() {
+  var T = D.tech || {}, AN = T.anatomy || {};
+  var cur = AN[S.part] || {};
+  var pp = PART_PHOTO[S.part] ? photo(PART_PHOTO[S.part]) : null;
+  var h = banner('paddock', t('tech_title'), t('tech_intro'), 'engine');
+  var kb = kartBlock();
+  h += '<section class="panel"><div class="sec-head"><h3 class="h3i">' + ic('wrench') + t('anat_h') + '</h3><p class="muted" style="font-size:13px">' + t('anat_hint') + '</p></div><div class="anat"' + (kb ? '' : ' style="grid-template-columns:1fr"') + '>' + (kb ? '<div>' + kb + '</div>' : '') + '<div style="display:grid;gap:16px;align-content:start">' +
+    '<div class="part-card" aria-live="polite"><h3>' + esc(L(cur.title) || S.part) + '</h3><p>' + esc(L(cur.text)) + '</p>' + (L(cur.nerd) ? '<p class="nerd"><b>NERD</b>' + esc(L(cur.nerd)) + '</p>' : '') +
+      (pp ? '<figure>' + img(pp) + '<figcaption class="credit">' + esc(L(pp.caption)) + ' — ' + creditLine(pp) + '</figcaption></figure>' : '') + '</div>' +
+    '<ul class="parts">' + PARTS.map(function (p, i) { var a = AN[p] || {}; return '<li><button type="button" data-part="' + p + '" aria-pressed="' + (S.part === p) + '"><b>' + (i + 1) + '</b>' + esc(L(a.title) || p) + '</button></li>'; }).join('') + '</ul></div></div></section>';
+
+  var classes = arr(T.classes);
+  if (classes.length) {
+    var metric = S.metric, unit = metric === 'hp' ? t('hp_u') : metric === 'weightKg' ? 'kg' : 'km/h';
+    var list = classes.filter(function (c) { return S.showRef || c.robin !== 'reference'; }).filter(function (c) { return typeof c[metric] === 'number'; });
+    var max = Math.max.apply(null, list.map(function (c) { return c[metric]; }).concat([1]));
+    h += '<section class="panel"><div class="sec-head"><div style="display:grid;gap:6px"><h3 class="h3i">' + ic('gauge') + t('classes_h') + '</h3><p class="muted" style="font-size:14px">' + t('classes_intro') + '</p></div>' +
+      '<div class="filters" role="group">' + [['hp','m_hp','lightning'],['weightKg','m_weight','gauge'],['topSpeed','m_speed','stopwatch']].map(function (m) { return '<button type="button" data-metric="' + m[0] + '" aria-pressed="' + (S.metric === m[0]) + '">' + ic(m[2]) + t(m[1]) + '</button>'; }).join('') +
+      '<button type="button" data-ref="1" aria-pressed="' + S.showRef + '">' + t('show_ref') + '</button></div></div>' +
+      '<div class="bars">' + list.map(function (c) {
+        var cls = c.robin === 'current' ? ' current' : (c.robin === 'raced' ? ' robin' : '');
+        var txt = metric === 'hp' ? (L(c.hpText) || c.hp + ' ' + unit) : metric === 'weightKg' ? (L(c.weightText) || c.weightKg + ' kg') : (L(c.topSpeedText) || c.topSpeed + ' km/h');
+        return '<div class="bar' + cls + '"><span class="lbl" title="' + esc(c.name) + '">' + esc(c.name) + '</span><span class="trk"><span class="fill" style="width:' + Math.max(1.5, c[metric] / max * 100).toFixed(1) + '%"></span></span><span class="val">' + esc(txt) + '</span></div>';
+      }).join('') + '</div>' +
+      '<div class="chips"><span class="chip" style="border-color:var(--kerb);color:var(--kerb)">■ ' + t('rb-current') + '</span><span class="chip" style="border-color:var(--blue);color:var(--blue)">■ ' + t('rb-raced') + '</span></div>' +
+      '<details class="more"><summary>' + t('more') + '</summary><div><div class="tbl-wrap"><table><thead><tr><th>' + t('th_class') + '</th><th>' + t('th_age') + '</th><th>' + t('th_engine') + '</th><th>' + t('th_hp') + '</th><th>' + t('th_rpm') + '</th><th>' + t('th_gear') + '</th><th>' + t('th_weight') + '</th><th>' + t('th_tyres') + '</th><th>' + t('th_speed') + '</th></tr></thead><tbody>' +
+      classes.filter(function (c) { return S.showRef || c.robin !== 'reference'; }).map(function (c) {
+        return '<tr><td><b>' + esc(c.name) + '</b>' + (c.robin ? '<span class="sub">' + t('rb-' + c.robin) + '</span>' : '') + (c.aka ? '<span class="sub">' + esc(c.aka) + '</span>' : '') + '</td><td>' + esc(L(c.age) || '–') + '</td><td>' + esc(L(c.engine) || '–') + '</td><td class="mono nowrap">' + esc(L(c.hpText) || (c.hp != null ? c.hp + ' ' + t('hp_u') : '–')) + '</td><td class="mono">' + esc(L(c.rpm) || '–') + '</td><td>' + esc(L(c.gearbox) || '–') + '</td><td class="mono nowrap">' + esc(L(c.weightText) || (c.weightKg != null ? c.weightKg + ' kg' : '–')) + '</td><td>' + esc(L(c.tyres) || '–') + '</td><td class="mono nowrap">' + esc(L(c.topSpeedText) || (c.topSpeed != null ? '~' + c.topSpeed + ' km/h' : '–')) + '</td></tr>' +
+          (L(c.note) ? '<tr><td colspan="9" style="font-size:13px;color:var(--ink-2);padding-top:0">' + esc(L(c.note)) + ' ' + arr(c.sources).slice(0, 2).map(srcLink).join(' ') + '</td></tr>' : '');
+      }).join('') + '</tbody></table></div></div></details></section>';
+  }
+
+  var gal = arr(A.photos).filter(function (p) { return /^tech-/.test(p.use); });
+  if (gal.length) h += '<section style="display:grid;gap:12px"><h3 class="h3i">' + ic('engine') + t('gallery_h') + '</h3><div class="gallery">' + gal.map(function (p) { return '<figure>' + img(p) + '<figcaption>' + esc(L(p.caption)) + '</figcaption><span class="credit">' + creditLine(p) + '</span></figure>'; }).join('') + '</div></section>';
+
+  var eq = arr(T.equipment);
+  if (eq.length) {
+    h += '<section class="panel"><h3 class="h3i">' + ic('wrench') + t('equip_h') + '</h3><div class="tbl-wrap"><table><thead><tr><th>' + t('th_year') + '</th><th>' + t('th_class') + '</th><th>' + t('th_team') + '</th><th>' + t('th_chassis') + '</th><th>' + t('th_engine') + '</th><th>' + t('th_tyres') + '</th><th>' + t('th_src') + '</th></tr></thead><tbody>' +
+      eq.map(function (e) { return '<tr><td class="mono">' + esc(e.year) + '</td><td>' + esc(e.class || '–') + '</td><td>' + esc(e.team || '–') + '</td><td>' + esc(e.chassis || '–') + '</td><td>' + esc(e.engine || '–') + '</td><td>' + esc(e.tyres || '–') + '</td><td>' + arr(e.sources).slice(0, 2).map(srcLink).join(' ') + '</td></tr>'; }).join('') + '</tbody></table></div></section>';
+  }
+
+  var wk = arr(T.weekend), gl = arr(T.glossary), tf = arr(T.facts);
+  h += '<div class="grid-2">';
+  if (wk.length) h += '<section class="panel"><h3 class="h3i">' + ic('flag-checkered') + t('weekend_h') + '</h3><ol class="steps">' + wk.map(function (w) { return '<li><div><b>' + esc(L(w.step)) + '</b><p>' + esc(L(w.text)) + '</p></div></li>'; }).join('') + '</ol></section>';
+  if (tf.length) h += '<section class="panel"><h3 class="h3i">' + ic('lightning') + t('facts_h') + '</h3><ul class="facts">' + tf.map(function (f) { return '<li><span>' + esc(L(f.text || f)) + '</span></li>'; }).join('') + '</ul></section>';
+  h += '</div>';
+  if (gl.length) {
+    h += '<section style="display:grid;gap:12px"><div class="sec-head"><h3 class="h3i">' + ic('book') + t('gloss_h') + '</h3><label class="sr" for="gloss-q">' + t('gloss_ph') + '</label><input id="gloss-q" class="search" type="search" placeholder="' + esc(t('gloss_ph')) + '" value="' + esc(S.gloss) + '"></div><div class="gloss" id="gloss-list">' + glossItems(gl) + '</div></section>';
+  }
+  return h;
+}
+function glossItems(gl) {
+  var q = S.gloss.trim().toLowerCase();
+  var items = gl.filter(function (g) { return !q || (L(g.term) + ' ' + L(g.text)).toLowerCase().indexOf(q) > -1; });
+  if (!items.length) return '<p class="empty">–</p>';
+  return items.map(function (g) { return '<div><b>' + esc(L(g.term)) + '</b><p>' + esc(L(g.text)) + '</p></div>'; }).join('');
+}
+
+function vTracks() {
+  var tr = arr(D.tracks);
+  var tp = photo('track-aerial') || arr(A.photos).filter(function (p) { return /^track:/.test(p.use || '') && (p.width || 0) >= (p.height || 0); })[0] || null;
+  var h = banner(tp, t('tracks_title'), t('tracks_intro'), 'map');
+  var raced = {}; arr(D.results).forEach(function (r) { if (r.trackId) raced[r.trackId] = true; });
+  var withLen = tr.filter(function (x) { return typeof x.lengthM === 'number'; }).sort(function (a, b) { return b.lengthM - a.lengthM; });
+  if (withLen.length > 1) {
+    var mx = withLen[0].lengthM;
+    h += '<section class="panel"><h3 class="h3i">' + ic('road') + t('len_h') + '</h3><div class="bars">' + withLen.map(function (x) {
+      return '<div class="bar' + (raced[x.id] ? ' robin' : '') + '"><span class="lbl" style="display:flex;gap:6px;align-items:center">' + flag(x.country) + trackBtn(x.id, x.short || x.name) + '</span><span class="trk"><span class="fill" style="width:' + (x.lengthM / mx * 100).toFixed(1) + '%"></span></span><span class="val">' + x.lengthM + ' m</span></div>';
+    }).join('') + '</div></section>';
+  }
+  h += '<div class="tracks">' + tr.map(function (x) {
+    var specs = [[t('t_len'), typeof x.lengthM === 'number' ? x.lengthM + ' m' : x.lengthM], [t('t_width'), x.widthM ? x.widthM + (String(x.widthM).indexOf('m') > -1 ? '' : ' m') : ''], [t('t_corners'), x.corners], [t('t_dir'), L(x.direction)]].filter(function (s) { return s[1] != null && s[1] !== ''; });
+    var sat = (typeof x.lat === 'number' && typeof x.lon === 'number') ? '<a class="link-more" href="https://www.google.com/maps/@' + x.lat + ',' + x.lon + ',17z/data=!3m1!1e3" target="_blank" rel="noopener noreferrer">' + ic('globe') + t('sat') + '</a>' : '';
+    var ph = trackPhoto(x.id);
+    return '<article class="track" id="trk-' + esc(x.id) + '"><div class="track-vis' + (ph ? ' has-photo' : '') + '">' + (ph ? img(ph) : '') + shape(x.id) + '<span class="flagbig">' + flag(x.country) + '</span></div>' +
+      '<div class="track-body"><header><div style="display:grid;gap:4px"><h3>' + esc(x.name) + '</h3><span class="muted" style="font-size:13px">' + esc([x.town, x.region].filter(Boolean).join(', ')) + '</span></div></header>' +
+      (x.kimi ? '<span class="chip" style="justify-self:start;border-color:var(--kerb);color:var(--kerb)">' + t('kimi_track') + '</span>' : '') +
+      (specs.length ? '<dl class="specs">' + specs.map(function (s) { return '<div><dt>' + esc(s[0]) + '</dt><dd>' + esc(s[1]) + '</dd></div>'; }).join('') + '</dl>' : '') +
+      (L(x.robin) ? '<p class="rr"><b>' + t('t_robin') + ':</b> ' + esc(L(x.robin)) + '</p>' : '') +
+      (L(x.desc) ? '<p>' + esc(L(x.desc)) + '</p>' : '') +
+      ((L(x.record) || L(x.notable)) ? '<details class="more"><summary>' + t('more') + '</summary><div>' + (L(x.record) ? '<p><span class="lbl-mini">' + t('t_record') + '</span>' + esc(L(x.record)) + '</p>' : '') + (L(x.notable) ? '<p><span class="lbl-mini">' + t('t_notable') + '</span>' + esc(L(x.notable)) + '</p>' : '') + '</div></details>' : '') +
+      '<div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">' + sat + arr(x.sources).slice(0, 2).map(srcLink).join(' ') + '</div>' +
+      (ph ? '<p class="credit">' + creditLine(ph) + '</p>' : '') + '</div></article>';
+  }).join('') + '</div>';
+  return h;
+}
+
+var STEP_IC = ['steering-wheel','steering-wheel','steering-wheel','steering-wheel','gauge','flag-checkered','flag-checkered','flag-checkered','flag-checkered','trophy','trophy'];
+function vLadder() {
+  var Lr = D.ladder || {}, R = D.rbjt || {}, F = D.finns || {};
+  var h = banner('hero', t('f1_title'), t('f1_intro'), 'steps', 1);
+  var steps = arr(Lr.steps).slice().sort(function (a, b) { return a.order - b.order; });
+  if (steps.length) {
+    h += '<section class="panel"><ol class="ladder">' + steps.map(function (s, i) {
+      var yr = s.robinYear ? String(s.robinYear) : '–';
+      var by = D.driver && parseISO(D.driver.born);
+      var ageAt = s.robinYear && by && !s.done ? (parseInt(s.robinYear, 10) - by.y) : null;
+      var icn = i === steps.length - 1 ? 'trophy' : (STEP_IC[i] || 'flag-checkered');
+      return '<li class="' + (s.now ? 'now' : (s.done ? 'done' : '')) + '"><span class="li-ic">' + ic(icn) + '</span><div class="yr"><b>' + esc(yr) + '</b><span>' + (s.now ? t('robin_now') : s.done ? t('done_step') : t('earliest')) + (ageAt && !isNaN(ageAt) ? ' · ' + ageAt + ' ' + yrs() : '') + '</span></div>' +
+        '<div><h3>' + esc(L(s.stage)) + (s.now ? ' <span class="chip rb">' + t('robin_now') + '</span>' : '') + '</h3>' +
+        '<p class="ages">' + [L(s.minAge) ? t('min_age') + ': ' + L(s.minAge) : '', L(s.typical) ? t('typical') + ': ' + L(s.typical) : ''].filter(Boolean).map(esc).join(' · ') + '</p>' +
+        '<p>' + esc(L(s.desc)) + '</p></div></li>';
+    }).join('') + '</ol></section>';
+  }
+  h += '<div class="grid-2">';
+  if (Lr.superlicence) h += '<section class="panel"><h3 class="h3i">' + ic('star') + t('sl_h') + '</h3><p>' + esc(L(Lr.superlicence.text)) + '</p>' + (arr(Lr.superlicence.points).length ? '<details class="more"><summary>' + t('more') + '</summary><div><div class="tbl-wrap"><table><tbody>' + Lr.superlicence.points.map(function (p) { return '<tr><td>' + esc(L(p.series)) + '</td><td class="mono">' + esc(p.points) + '</td></tr>'; }).join('') + '</tbody></table></div></div></details>' : '') + '</section>';
+  var rules = arr(Lr.rules);
+  if (rules.length) h += '<section class="panel"><h3 class="h3i">' + ic('flag-checkered') + t('rules_h') + '</h3><div>' + rules.map(function (r) { return '<details class="rule"><summary>' + esc(L(r.topic)) + '</summary><p>' + esc(L(r.text)) + '</p></details>'; }).join('') + '</div></section>';
+  h += '</div>';
+  if (R.how || arr(R.graduates).length) {
+    h += '<section class="panel"><div class="sec-head"><h3 style="font-size:30px;font-style:italic;font-weight:850;font-stretch:72%;text-transform:uppercase">' + t('rbjt_h') + '</h3>' + (R.founded ? '<span class="chip">' + esc(R.founded) + '</span>' : '') + '</div>' +
+      (L(R.how) ? '<p style="max-width:74ch">' + esc(L(R.how)) + '</p>' : '') + (L(R.kartSignings) ? '<p class="muted" style="max-width:74ch">' + esc(L(R.kartSignings)) + '</p>' : '') +
+      (arr(R.graduates).length ? '<h4 class="eyebrow">' + ic('trophy') + t('grads_h') + '</h4><ul class="names">' + R.graduates.map(function (g) { return '<li><b>' + esc(g.name) + '</b><span>' + esc(L(g.note)) + '</span></li>'; }).join('') + '</ul>' : '') +
+      (arr(R.dropped).length ? '<details class="more"><summary>' + t('dropped_h') + '</summary><div><ul class="names">' + R.dropped.map(function (g) { return '<li><b>' + esc(g.name) + '</b><span>' + esc(L(g.note)) + '</span></li>'; }).join('') + '</ul></div></details>' : '') +
+      (arr(R.roster).length ? '<h4 class="eyebrow">' + ic('users') + t('roster_h') + '</h4><div class="chips">' + R.roster.map(function (n) { return '<span class="chip">' + esc(L(n)) + '</span>'; }).join('') + '</div>' : '') + '</section>';
+  }
+  var jr = arr(F.juniors);
+  if (jr.length) h += '<section class="panel"><h3 class="h3i">' + flag('FIN') + t('finns_jr_h') + '</h3><ul class="names">' + jr.map(function (j) { return '<li><b>' + flag('FIN') + esc(j.name) + '</b><span class="mono" style="font-size:12px">' + esc(j.series || '') + '</span><span>' + esc(L(j.note)) + '</span></li>'; }).join('') + '</ul></section>';
+  return h;
+}
+
+function vKimi() {
+  var K = D.kimi || {}, st = K.stats || {};
+  var h = '<div class="plainhead"><p class="eyebrow">' + ic('snowflake') + 'Iceman · Kimster · Robin</p><h2>' + t('kimi_title') + '</h2><p class="muted" style="max-width:62ch">' + t('kimi_intro') + '</p></div>';
+  var tiles = [[st.starts,'k_starts','flag-checkered'],[st.wins,'k_wins','trophy'],[st.poles,'k_poles','crown'],[st.podiums,'k_podiums','medal'],[st.fastestLaps,'k_fl','lightning'],[st.titles,'k_title','star']].filter(function (x) { return x[0] != null && x[0] !== ''; });
+  if (tiles.length) h += '<div class="kstats">' + tiles.map(function (x) { return '<div>' + ic(x[2]) + '<b>' + esc(x[0]) + '</b><span>' + t(x[1]) + '</span></div>'; }).join('') + '</div>' + (L(st.note) ? '<p class="muted" style="font-size:13px;margin-top:-16px">' + esc(L(st.note)) + '</p>' : '');
+  var qs = arr(K.quotes);
+  if (qs.length) h += '<section class="panel qpanel"><p class="eyebrow">' + ic('quote') + t('quote_h') + '</p><div id="qbox">' + quoteBlock(qs[S.q % qs.length]) + '</div><button type="button" class="btn" data-act="quote">' + t('quote_btn') + '</button></section>';
+  var vs = arr(K.vs);
+  if (vs.length) h += '<section class="panel"><h3 class="h3i">' + ic('users') + t('vs_h') + '</h3><div class="tbl-wrap"><table class="vs"><thead><tr><th>' + t('th_topic') + '</th><th class="kimi">Kimi</th><th class="robin">Robin</th></tr></thead><tbody>' + vs.map(function (v) { return '<tr><td>' + esc(L(v.topic)) + '</td><td>' + esc(L(v.kimi)) + '</td><td>' + esc(L(v.robin)) + '</td></tr>'; }).join('') + '</tbody></table></div></section>';
+  h += '<div class="grid-2">';
+  var path = arr(K.path);
+  if (path.length) h += '<section class="panel"><h3 class="h3i">' + ic('steps') + t('path_h') + '</h3><ol class="tl">' + path.map(function (p) { return '<li class="' + (p.key ? 'key' : '') + '"><span class="when">' + esc(p.year) + (p.age ? ' · ' + esc(p.age) + ' ' + yrs() : '') + '</span><b>' + esc(L(p.cat)) + '</b><p>' + esc(L(p.text)) + '</p></li>'; }).join('') + '</ol></section>';
+  h += '<div style="display:grid;gap:20px;align-content:start">';
+  if (L(K.role)) h += '<section class="panel"><h3 class="h3i">' + ic('wrench') + t('role_h') + '</h3><p>' + esc(L(K.role)) + '</p></section>';
+  if (L(K.helmet)) h += '<section class="panel"><h3 class="h3i">' + ic('flag') + t('helmet_h') + '</h3><p>' + esc(L(K.helmet)) + '</p></section>';
+  if (arr(K.nicknames).length) h += '<section class="panel"><h3 class="h3i">' + ic('snowflake') + t('nick_h') + '</h3><div class="chips">' + K.nicknames.map(function (n) { return '<span class="chip">' + esc(L(n)) + '</span>'; }).join('') + '</div></section>';
+  h += '</div></div>';
+  var fins = arr(D.finns && D.finns.f1);
+  if (fins.length) h += '<section class="panel"><h3 class="h3i">' + flag('FIN') + t('finns_h') + '</h3><div class="tbl-wrap"><table><tbody>' + fins.map(function (f) { return '<tr><td class="nowrap"><b>' + esc(f.name) + '</b></td><td class="mono nowrap">' + esc(f.years) + '</td><td>' + esc(L(f.highlight)) + '</td></tr>'; }).join('') + '</tbody></table></div></section>';
+  return h;
+}
+
+function bestScore(v) {
+  try { if (v != null) { localStorage.setItem('rr-quiz-best', String(v)); return v; } var b = localStorage.getItem('rr-quiz-best'); return b == null ? null : +b; } catch (e) { return null; }
+}
+function vQuiz() {
+  var Q = arr(D.quiz), z = S.quiz;
+  var h = '<div class="plainhead"><p class="eyebrow">' + ic('question') + Q.length + ' ' + t('q_count') + '</p><h2>' + t('quiz_title') + '</h2><p class="muted" style="max-width:62ch">' + t('quiz_intro') + '</p></div>';
+  if (!Q.length) return h + '<p class="empty">–</p>';
+  h += '<section class="panel quiz">';
+  if (z.done) {
+    var best = bestScore(); var pct = z.score / Q.length;
+    h += '<p class="eyebrow">' + ic('trophy') + t('q_score') + '</p><div class="score">' + z.score + ' / ' + Q.length + '</div><p style="font-size:18px">' + t(pct >= .8 ? 'q_v2' : pct >= .5 ? 'q_v1' : 'q_v0') + '</p>' +
+      (best != null ? '<p class="muted">' + t('q_best') + ': <b class="mono">' + best + ' / ' + Q.length + '</b></p>' : '') + '<button type="button" class="btn" data-act="q-again">' + t('q_again') + '</button>';
+  } else {
+    var q = Q[z.i];
+    h += '<div class="qhead"><span class="eyebrow">' + t('q_of') + ' ' + (z.i + 1) + ' / ' + Q.length + '</span><span class="mono" style="font-size:13px">' + z.score + ' ✓</span></div><div class="qbar"><i style="width:' + ((z.i + (z.picked != null ? 1 : 0)) / Q.length * 100) + '%"></i></div>' +
+      '<p class="qq">' + esc(L(q.q)) + '</p><div class="opts">' + arr(q.options).map(function (o, i) {
+        var cls = z.picked == null ? '' : (i === q.answer ? 'right' : (i === z.picked ? 'wrong' : ''));
+        return '<button type="button" data-opt="' + i + '" class="' + cls + '"' + (z.picked != null ? ' disabled' : '') + '><b>' + 'ABCD'[i] + '</b><span>' + esc(L(o)) + '</span></button>';
+      }).join('') + '</div>';
+    if (z.picked != null) {
+      var ok = z.picked === q.answer;
+      h += '<div class="explain' + (ok ? '' : ' bad') + '" aria-live="polite"><b>' + t(ok ? 'q_right' : 'q_wrong') + '</b> ' + esc(L(q.explain)) + '</div>' +
+        '<button type="button" class="btn" data-act="q-next">' + (z.i + 1 < Q.length ? t('q_next') : t('q_finish')) + '</button>';
+    }
+  }
+  return h + '</section>';
+}
+
+var RENDER = {paddock:vPaddock, tulokset:vResults, kalenteri:vCalendar, uutiset:vNews, tekniikka:vTech, radat:vTracks, 'tie-f1':vLadder, kimi:vKimi, visa:vQuiz};
+
+function credits() {
+  var items = [];
+  arr(A.photos).forEach(function (p) { items.push('<li>' + esc(p.title || p.file) + ' — ' + creditLine(p) + '</li>'); });
+  if (A.kart && A.kart.file) items.push('<li>' + esc(A.kart.title || 'Kart') + ' — ' + creditLine(A.kart) + '</li>');
+  if (A.tracks && Object.keys(A.tracks).length) items.push('<li>' + t('nav-radat') + ': © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a> (ODbL)</li>');
+  var im = A.icons && A.icons._meta; if (im) items.push('<li>' + esc(im.set || 'Icons') + ' — ' + (im.source ? '<a href="' + esc(im.source) + '" target="_blank" rel="noopener noreferrer">' + esc(im.license || '') + '</a>' : esc(im.license || '')) + '</li>');
+  var fm = A.flags && A.flags._meta; if (fm) items.push('<li>' + esc(fm.set || 'flag-icons') + ' — ' + (fm.source ? '<a href="' + esc(fm.source) + '" target="_blank" rel="noopener noreferrer">' + esc(fm.license || '') + '</a>' : esc(fm.license || '')) + '</li>');
+  return items.length ? '<details><summary>' + t('credits_h') + '</summary><p style="margin-top:6px">' + t('credits_note') + '</p><ul>' + items.join('') + '</ul></details>' : '';
+}
+function renderChrome() {
+  document.documentElement.lang = lang;
+  $('#tagline').textContent = t('tagline');
+  $$('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang)); });
+  $('#nav').innerHTML = VIEWS.map(function (v) { return '<a href="#' + v + '"' + (S.view === v ? ' aria-current="page"' : '') + '>' + ic(NAV_IC[v]) + t('nav-' + v) + '</a>'; }).join('');
+  var m = D.meta || {};
+  $('#foot').innerHTML = '<p>' + t('foot_1') + '</p><p>' + t('foot_2') + '</p>' + (m.updated ? '<p class="mono">' + t('updated') + ': ' + fmtDate(m.updated) + (AU && AU.checked ? ' · ' + t('checked') + ': ' + fmtDate(String(AU.checked).slice(0, 10)) : '') + '</p>' : '') + credits();
+}
+function render() {
+  renderChrome();
+  var main = $('#main');
+  if (!window.RR_DATA) { main.innerHTML = '<p class="empty">' + t('no_data') + '</p>'; return; }
+  main.innerHTML = '<div class="view" id="v-' + S.view + '">' + RENDER[S.view]() + '</div>';
+  var cur = $('#nav a[aria-current]'); if (cur && cur.scrollIntoView) { try { cur.scrollIntoView({block:'nearest', inline:'nearest'}); } catch (e) {} }
+}
+function go(v) {
+  if (VIEWS.indexOf(v) < 0) v = 'paddock';
+  var changed = v !== S.view; S.view = v; render();
+  if (changed) window.scrollTo(0, 0);
+}
+function fromHash() { var h = (location.hash || '').replace('#', ''); return VIEWS.indexOf(h) > -1 ? h : 'paddock'; }
+function flashTo(el) { if (!el) return; el.scrollIntoView({behavior:'smooth', block:'start'}); el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); var d = el.querySelector('details.more'); if (d) d.open = true; }
+function switchTo(v) { if (S.view !== v) { S.view = v; try { history.pushState(null, '', '#' + v); } catch (e) {} } render(); }
+
+document.addEventListener('click', function (ev) {
+  var el = ev.target.closest('button');
+  if (!el) return;
+  if (el.hasAttribute('data-lang')) { lang = el.getAttribute('data-lang'); try { localStorage.setItem('rr-lang', lang); } catch (e) {} render(); return; }
+  if (el.hasAttribute('data-track')) { switchTo('radat'); flashTo(document.getElementById('trk-' + el.getAttribute('data-track'))); return; }
+  if (el.hasAttribute('data-res')) { var id = el.getAttribute('data-res'); if (S.resYear !== 'all') S.resYear = 'all'; switchTo('tulokset'); flashTo(document.getElementById('res-' + id)); return; }
+  if (el.hasAttribute('data-year')) { S.resYear = el.getAttribute('data-year'); render(); return; }
+  if (el.hasAttribute('data-cat')) { S.newsCat = el.getAttribute('data-cat'); render(); return; }
+  if (el.hasAttribute('data-part')) { S.part = el.getAttribute('data-part'); render(); if (window.innerWidth < 860) { var pc = $('.part-card'); if (pc) pc.scrollIntoView({behavior:'smooth', block:'nearest'}); } return; }
+  if (el.hasAttribute('data-metric')) { S.metric = el.getAttribute('data-metric'); render(); return; }
+  if (el.hasAttribute('data-ref')) { S.showRef = !S.showRef; render(); return; }
+  if (el.hasAttribute('data-opt')) { if (S.quiz.picked == null) { S.quiz.picked = +el.getAttribute('data-opt'); if (S.quiz.picked === arr(D.quiz)[S.quiz.i].answer) S.quiz.score++; render(); } return; }
+  var act = el.getAttribute('data-act');
+  if (act === 'fact') { S.fact++; render(); return; }
+  if (act === 'quote') { var n = arr(D.kimi && D.kimi.quotes).length; if (n > 1) { var r; do { r = Math.floor(Math.random() * n); } while (r === S.q % n); S.q = r; } var box = $('#qbox'); if (box) box.innerHTML = quoteBlock(D.kimi.quotes[S.q % n]); return; }
+  if (act === 'q-next') { if (S.quiz.i + 1 < arr(D.quiz).length) { S.quiz.i++; S.quiz.picked = null; } else { S.quiz.done = true; var b = bestScore(); if (b == null || S.quiz.score > b) bestScore(S.quiz.score); } render(); return; }
+  if (act === 'q-again') { S.quiz = {i:0, score:0, picked:null, done:false}; render(); return; }
+});
+document.addEventListener('input', function (ev) {
+  if (ev.target.id === 'gloss-q') { S.gloss = ev.target.value; var gl = $('#gloss-list'); if (gl) gl.innerHTML = glossItems(arr(D.tech && D.tech.glossary)); }
+});
+window.addEventListener('hashchange', function () { go(fromHash()); });
+try { mergeAuto(); } catch (e) {}
+S.view = fromHash();
+render();
+})();
+</script>
