@@ -1,7 +1,17 @@
 window.RR_AUTO = {
- "updated": "2026-09-26",
- "checked": "2026-10-02T10:33:45Z",
+ "updated": "2026-10-05",
+ "checked": "2026-10-05T11:34:09Z",
  "news": [
+  {
+   "date": "2026-10-04",
+   "headline": "Robin Räikkönen, 11, sai rangaistuksen",
+   "source": "Iltalehti",
+   "url": "https://www.iltalehti.fi/formulat/a/f878c8d9-c0f0-4028-a2f9-d45bd43697f9",
+   "lang": "fi",
+   "category": "result",
+   "importance": 3,
+   "auto": true
+  },
   {
    "date": "2026-09-25",
    "headline": "Kommentti: Tuukka Taposen ja Robin Räikkösen välillä on yksi valtava ero",
@@ -145,66 +155,6 @@ window.RR_AUTO = {
  },
  "log": [
   {
-   "date": "2026-09-24",
-   "source": "rotax_italia",
-   "msg": "rotax_italia: 3 HTTP requests, 0 new result rows, battle table updated"
-  },
-  {
-   "date": "2026-09-24",
-   "source": "rotax_italia",
-   "msg": "ok: 3 requests, 5 s, 0 news, 0 result rows, battle table"
-  },
-  {
-   "date": "2026-09-24",
-   "source": "wsk",
-   "msg": "wsk: 4 HTTP requests"
-  },
-  {
-   "date": "2026-09-24",
-   "source": "wsk",
-   "msg": "ok: 4 requests, 6 s, 0 news, 7 result rows"
-  },
-  {
-   "date": "2026-09-26",
-   "source": "international",
-   "msg": "international: Rotax Grand Finals: no results published yet at https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rgf2026/"
-  },
-  {
-   "date": "2026-09-26",
-   "source": "international",
-   "msg": "international: 5 HTTP requests {'rmcit.3mkevents.com': 1, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 1, 'backend.fiakarting.com': 2}, 0 result rows"
-  },
-  {
-   "date": "2026-09-26",
-   "source": "international",
-   "msg": "ok: 5 requests, 5 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-09-26",
-   "source": "news_rss",
-   "msg": "news_rss: 22 feeds requested, 18 Robin items in feeds, 1 new"
-  },
-  {
-   "date": "2026-09-26",
-   "source": "news_rss",
-   "msg": "ok: 22 requests, 25 s, 1 news, 0 result rows"
-  },
-  {
-   "date": "2026-09-26",
-   "source": "rotax_ch",
-   "msg": "rotax_ch: 3 HTTP requests, 0 result rows"
-  },
-  {
-   "date": "2026-09-26",
-   "source": "rotax_ch",
-   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-09-26",
-   "source": "rotax_italia",
-   "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
-  },
-  {
    "date": "2026-09-26",
    "source": "rotax_italia",
    "msg": "rotax_italia: 3 HTTP requests, 0 new result rows, battle table updated"
@@ -293,6 +243,66 @@ window.RR_AUTO = {
    "date": "2026-10-02",
    "source": "wsk",
    "msg": "ok: 4 requests, 8 s, 0 news, 7 result rows"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "international",
+   "msg": "international: Rotax Grand Finals: no results published yet at https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rgf2026/"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "international",
+   "msg": "international: 5 HTTP requests {'rmcit.3mkevents.com': 1, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 1, 'backend.fiakarting.com': 2}, 0 result rows"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "international",
+   "msg": "ok: 5 requests, 6 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "news_rss",
+   "msg": "news_rss: 22 feeds requested, 17 Robin items in feeds, 1 new"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "news_rss",
+   "msg": "ok: 22 requests, 28 s, 1 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "rotax_ch",
+   "msg": "rotax_ch: 3 HTTP requests, 0 result rows"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "rotax_ch",
+   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: 3 HTTP requests, 0 new result rows, battle table updated"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "rotax_italia",
+   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows, battle table"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "wsk",
+   "msg": "wsk: 4 HTTP requests"
+  },
+  {
+   "date": "2026-10-05",
+   "source": "wsk",
+   "msg": "ok: 4 requests, 9 s, 0 news, 7 result rows"
   }
  ]
 };
