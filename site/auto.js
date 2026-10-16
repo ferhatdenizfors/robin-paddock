@@ -1,7 +1,37 @@
 window.RR_AUTO = {
- "updated": "2026-10-10",
- "checked": "2026-10-10T10:39:26Z",
+ "updated": "2026-10-16",
+ "checked": "2026-10-16T09:04:39Z",
  "news": [
+  {
+   "date": "2026-10-15",
+   "headline": "Robin Räikkönen puhuu videolla – fanit hämmästelevät eroa isä-Kimiin",
+   "source": "Ilta-Sanomat",
+   "url": "https://www.is.fi/formula1/art-2000012346000.html",
+   "lang": "fi",
+   "category": "interview",
+   "importance": 3,
+   "auto": true
+  },
+  {
+   "date": "2026-10-15",
+   "headline": "Robin Räikkönen puhuu videolla – Tämä hämmästyttää",
+   "source": "Iltalehti",
+   "url": "https://www.iltalehti.fi/formulat/a/7cc945de-4a30-4273-9178-433582cb1b40",
+   "lang": "fi",
+   "category": "interview",
+   "importance": 3,
+   "auto": true
+  },
+  {
+   "date": "2026-10-15",
+   "headline": "Robin Räikkönen paketoi menestyksekkään kautensa – ”Olen valmis ensi vuoteen”",
+   "source": "SuomiF1",
+   "url": "https://www.suomif1.com/2026/10/robin-raikkonen-paketoi-menestyksekkaan-kautensa-olen-valmis-ensi-vuoteen/",
+   "lang": "fi",
+   "category": "result",
+   "importance": 3,
+   "auto": true
+  },
   {
    "date": "2026-10-10",
    "headline": "Sponsorointi | Suomalaisyhtiön pomo kertoo, millaista on tehdä yhteistyötä 11-vuotiaan Robin Räikkösen kanssa",
@@ -175,66 +205,6 @@ window.RR_AUTO = {
  },
  "log": [
   {
-   "date": "2026-10-02",
-   "source": "rotax_ch",
-   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-02",
-   "source": "rotax_italia",
-   "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
-  },
-  {
-   "date": "2026-10-02",
-   "source": "rotax_italia",
-   "msg": "rotax_italia: 4 HTTP requests, 0 new result rows, battle table updated"
-  },
-  {
-   "date": "2026-10-02",
-   "source": "rotax_italia",
-   "msg": "ok: 4 requests, 8 s, 0 news, 0 result rows, battle table"
-  },
-  {
-   "date": "2026-10-02",
-   "source": "wsk",
-   "msg": "wsk: 4 HTTP requests"
-  },
-  {
-   "date": "2026-10-02",
-   "source": "wsk",
-   "msg": "ok: 4 requests, 8 s, 0 news, 7 result rows"
-  },
-  {
-   "date": "2026-10-05",
-   "source": "international",
-   "msg": "international: Rotax Grand Finals: no results published yet at https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rgf2026/"
-  },
-  {
-   "date": "2026-10-05",
-   "source": "international",
-   "msg": "international: 5 HTTP requests {'rmcit.3mkevents.com': 1, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 1, 'backend.fiakarting.com': 2}, 0 result rows"
-  },
-  {
-   "date": "2026-10-05",
-   "source": "international",
-   "msg": "ok: 5 requests, 6 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-05",
-   "source": "news_rss",
-   "msg": "news_rss: 22 feeds requested, 17 Robin items in feeds, 1 new"
-  },
-  {
-   "date": "2026-10-05",
-   "source": "news_rss",
-   "msg": "ok: 22 requests, 28 s, 1 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-05",
-   "source": "rotax_ch",
-   "msg": "rotax_ch: 3 HTTP requests, 0 result rows"
-  },
-  {
    "date": "2026-10-05",
    "source": "rotax_ch",
    "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
@@ -323,6 +293,66 @@ window.RR_AUTO = {
    "date": "2026-10-10",
    "source": "wsk",
    "msg": "ok: 4 requests, 9 s, 0 news, 7 result rows"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "international",
+   "msg": "international: Rotax Grand Finals: no results published yet at https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rgf2026/"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "international",
+   "msg": "international: 6 HTTP requests {'rmcit.3mkevents.com': 2, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 1, 'backend.fiakarting.com': 2}, 0 result rows"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "international",
+   "msg": "ok: 6 requests, 8 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "news_rss",
+   "msg": "news_rss: 22 feeds requested, 17 Robin items in feeds, 3 new"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "news_rss",
+   "msg": "ok: 22 requests, 22 s, 3 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "rotax_ch",
+   "msg": "rotax_ch: 3 HTTP requests, 0 result rows"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "rotax_ch",
+   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: 2 HTTP requests, 0 new result rows"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "rotax_italia",
+   "msg": "ok: 2 requests, 5 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "wsk",
+   "msg": "wsk: 4 HTTP requests"
+  },
+  {
+   "date": "2026-10-16",
+   "source": "wsk",
+   "msg": "ok: 4 requests, 8 s, 0 news, 7 result rows"
   }
  ]
 };
