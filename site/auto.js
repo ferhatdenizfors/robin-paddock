@@ -1,6 +1,6 @@
 window.RR_AUTO = {
  "updated": "2026-10-19",
- "checked": "2026-10-19T09:58:22Z",
+ "checked": "2026-10-25T09:12:04Z",
  "news": [
   {
    "date": "2026-10-19",
@@ -245,66 +245,6 @@ window.RR_AUTO = {
  },
  "log": [
   {
-   "date": "2026-10-10",
-   "source": "rotax_ch",
-   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-10",
-   "source": "rotax_italia",
-   "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
-  },
-  {
-   "date": "2026-10-10",
-   "source": "rotax_italia",
-   "msg": "rotax_italia: 4 HTTP requests, 0 new result rows, battle table updated"
-  },
-  {
-   "date": "2026-10-10",
-   "source": "rotax_italia",
-   "msg": "ok: 4 requests, 9 s, 0 news, 0 result rows, battle table"
-  },
-  {
-   "date": "2026-10-10",
-   "source": "wsk",
-   "msg": "wsk: 4 HTTP requests"
-  },
-  {
-   "date": "2026-10-10",
-   "source": "wsk",
-   "msg": "ok: 4 requests, 9 s, 0 news, 7 result rows"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "international",
-   "msg": "international: Rotax Grand Finals: no results published yet at https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rgf2026/"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "international",
-   "msg": "international: 6 HTTP requests {'rmcit.3mkevents.com': 2, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 1, 'backend.fiakarting.com': 2}, 0 result rows"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "international",
-   "msg": "ok: 6 requests, 8 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "news_rss",
-   "msg": "news_rss: 22 feeds requested, 17 Robin items in feeds, 3 new"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "news_rss",
-   "msg": "ok: 22 requests, 22 s, 3 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "rotax_ch",
-   "msg": "rotax_ch: 3 HTTP requests, 0 result rows"
-  },
-  {
    "date": "2026-10-16",
    "source": "rotax_ch",
    "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
@@ -393,6 +333,66 @@ window.RR_AUTO = {
    "date": "2026-10-19",
    "source": "wsk",
    "msg": "ok: 4 requests, 7 s, 0 news, 7 result rows"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "international",
+   "msg": "international: Rotax Grand Finals: no results published yet at https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rgf2026/"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "international",
+   "msg": "international: 6 HTTP requests {'rmcit.3mkevents.com': 2, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 1, 'backend.fiakarting.com': 2}, 0 result rows"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "international",
+   "msg": "ok: 6 requests, 8 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "news_rss",
+   "msg": "news_rss: 22 feeds requested, 13 Robin items in feeds, 0 new"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "news_rss",
+   "msg": "ok: 22 requests, 24 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "rotax_ch",
+   "msg": "rotax_ch: 3 HTTP requests, 0 result rows"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "rotax_ch",
+   "msg": "ok: 3 requests, 8 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: 2 HTTP requests, 0 new result rows"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "rotax_italia",
+   "msg": "ok: 2 requests, 4 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "wsk",
+   "msg": "wsk: 4 HTTP requests"
+  },
+  {
+   "date": "2026-10-25",
+   "source": "wsk",
+   "msg": "ok: 4 requests, 9 s, 0 news, 7 result rows"
   }
  ]
 };
