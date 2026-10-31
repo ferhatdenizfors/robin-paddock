@@ -1,7 +1,17 @@
 window.RR_AUTO = {
- "updated": "2026-10-19",
- "checked": "2026-10-25T09:12:04Z",
+ "updated": "2026-10-31",
+ "checked": "2026-10-31T10:26:26Z",
  "news": [
+  {
+   "date": "2026-10-31",
+   "headline": "Robin Räikkönen pääsi Tommi Mäkisen oppiin – kova paljastus Kimi-isästä: ”Ei meinannut saada pois”",
+   "source": "Ilta-Sanomat",
+   "url": "https://www.is.fi/formula1/art-2000012377159.html",
+   "lang": "fi",
+   "category": "interview",
+   "importance": 3,
+   "auto": true
+  },
   {
    "date": "2026-10-19",
    "headline": "Autourheilu | Robin Räikkönen, 11, voitti kartingmestaruuden",
@@ -245,71 +255,6 @@ window.RR_AUTO = {
  },
  "log": [
   {
-   "date": "2026-10-16",
-   "source": "rotax_ch",
-   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "rotax_italia",
-   "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "rotax_italia",
-   "msg": "rotax_italia: 2 HTTP requests, 0 new result rows"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "rotax_italia",
-   "msg": "ok: 2 requests, 5 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "wsk",
-   "msg": "wsk: 4 HTTP requests"
-  },
-  {
-   "date": "2026-10-16",
-   "source": "wsk",
-   "msg": "ok: 4 requests, 8 s, 0 news, 7 result rows"
-  },
-  {
-   "date": "2026-10-19",
-   "source": "international",
-   "msg": "international: Rotax Grand Finals: no results published yet at https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rgf2026/"
-  },
-  {
-   "date": "2026-10-19",
-   "source": "international",
-   "msg": "international: 6 HTTP requests {'rmcit.3mkevents.com': 2, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 1, 'backend.fiakarting.com': 2}, 0 result rows"
-  },
-  {
-   "date": "2026-10-19",
-   "source": "international",
-   "msg": "ok: 6 requests, 7 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-19",
-   "source": "news_rss",
-   "msg": "news_rss: 22 feeds requested, 16 Robin items in feeds, 4 new"
-  },
-  {
-   "date": "2026-10-19",
-   "source": "news_rss",
-   "msg": "ok: 22 requests, 19 s, 4 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-19",
-   "source": "rotax_ch",
-   "msg": "rotax_ch: 3 HTTP requests, 0 result rows"
-  },
-  {
-   "date": "2026-10-19",
-   "source": "rotax_ch",
-   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
-  },
-  {
    "date": "2026-10-19",
    "source": "rotax_italia",
    "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
@@ -393,6 +338,71 @@ window.RR_AUTO = {
    "date": "2026-10-25",
    "source": "wsk",
    "msg": "ok: 4 requests, 9 s, 0 news, 7 result rows"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "international",
+   "msg": "international: Rotax Grand Finals: no results published yet at https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rgf2026/"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "international",
+   "msg": "international: 6 HTTP requests {'rmcit.3mkevents.com': 2, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 1, 'backend.fiakarting.com': 2}, 0 result rows"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "international",
+   "msg": "ok: 6 requests, 9 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "news_rss",
+   "msg": "news_rss: near-miss (mentions Räikkönen, not Robin) 2026-10-30 SuomiF1: Kimi Räikkösen luottomies siirtyy syrjään – lähes neljä vuosikymmentä ja yli 600 peräkkäistä F1-kisaa"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "news_rss",
+   "msg": "news_rss: 22 feeds requested, 13 Robin items in feeds, 1 new"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "news_rss",
+   "msg": "ok: 22 requests, 26 s, 1 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "rotax_ch",
+   "msg": "rotax_ch: 3 HTTP requests, 0 result rows"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "rotax_ch",
+   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: 2 HTTP requests, 0 new result rows"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "rotax_italia",
+   "msg": "ok: 2 requests, 5 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "wsk",
+   "msg": "wsk: 4 HTTP requests"
+  },
+  {
+   "date": "2026-10-31",
+   "source": "wsk",
+   "msg": "ok: 4 requests, 8 s, 0 news, 7 result rows"
   }
  ]
 };
