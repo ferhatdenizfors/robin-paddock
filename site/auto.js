@@ -1,6 +1,6 @@
 window.RR_AUTO = {
  "updated": "2026-10-31",
- "checked": "2026-11-06T12:10:50Z",
+ "checked": "2026-11-12T12:48:31Z",
  "news": [
   {
    "date": "2026-10-31",
@@ -255,111 +255,6 @@ window.RR_AUTO = {
  },
  "log": [
   {
-   "date": "2026-10-25",
-   "source": "rotax_italia",
-   "msg": "ok: 2 requests, 4 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-25",
-   "source": "wsk",
-   "msg": "wsk: 4 HTTP requests"
-  },
-  {
-   "date": "2026-10-25",
-   "source": "wsk",
-   "msg": "ok: 4 requests, 9 s, 0 news, 7 result rows"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "international",
-   "msg": "international: Rotax Grand Finals: no results published yet at https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rgf2026/"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "international",
-   "msg": "international: 6 HTTP requests {'rmcit.3mkevents.com': 2, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 1, 'backend.fiakarting.com': 2}, 0 result rows"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "international",
-   "msg": "ok: 6 requests, 9 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "news_rss",
-   "msg": "news_rss: near-miss (mentions Räikkönen, not Robin) 2026-10-30 SuomiF1: Kimi Räikkösen luottomies siirtyy syrjään – lähes neljä vuosikymmentä ja yli 600 peräkkäistä F1-kisaa"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "news_rss",
-   "msg": "news_rss: 22 feeds requested, 13 Robin items in feeds, 1 new"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "news_rss",
-   "msg": "ok: 22 requests, 26 s, 1 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "rotax_ch",
-   "msg": "rotax_ch: 3 HTTP requests, 0 result rows"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "rotax_ch",
-   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "rotax_italia",
-   "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "rotax_italia",
-   "msg": "rotax_italia: 2 HTTP requests, 0 new result rows"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "rotax_italia",
-   "msg": "ok: 2 requests, 5 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "wsk",
-   "msg": "wsk: 4 HTTP requests"
-  },
-  {
-   "date": "2026-10-31",
-   "source": "wsk",
-   "msg": "ok: 4 requests, 8 s, 0 news, 7 result rows"
-  },
-  {
-   "date": "2026-11-06",
-   "source": "international",
-   "msg": "international: Rotax Grand Finals: no results published yet at https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rgf2026/"
-  },
-  {
-   "date": "2026-11-06",
-   "source": "international",
-   "msg": "international: 6 HTTP requests {'rmcit.3mkevents.com': 2, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 1, 'backend.fiakarting.com': 2}, 0 result rows"
-  },
-  {
-   "date": "2026-11-06",
-   "source": "international",
-   "msg": "ok: 6 requests, 7 s, 0 news, 0 result rows"
-  },
-  {
-   "date": "2026-11-06",
-   "source": "news_rss",
-   "msg": "news_rss: 0 items in https://www.vroomkart.com/rss.xml"
-  },
-  {
-   "date": "2026-11-06",
-   "source": "news_rss",
-   "msg": "news_rss: 0 items in https://www.vroomkart.it/rss.xml"
-  },
-  {
    "date": "2026-11-06",
    "source": "news_rss",
    "msg": "news_rss: 22 feeds requested, 9 Robin items in feeds, 0 new"
@@ -401,6 +296,111 @@ window.RR_AUTO = {
   },
   {
    "date": "2026-11-06",
+   "source": "wsk",
+   "msg": "ok: 4 requests, 8 s, 0 news, 7 result rows"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "international",
+   "msg": "international: Rotax Grand Finals Micro: final table unreadable (https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rmcgf2026)"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "international",
+   "msg": "international: Rotax Grand Finals Mini: final table unreadable (https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rmcgf2026)"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "international",
+   "msg": "international: Rotax Grand Finals Junior: final table unreadable (https://www.apex-timing.com/goracing/results.php?path=/korridas/2026/rmcgf2026)"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "international",
+   "msg": "international: 10 HTTP requests {'rmcit.3mkevents.com': 2, 'grandfinals.rotax-racing.com': 1, 'www.apex-timing.com': 4, 'backend.fiakarting.com': 3}, 0 result rows"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "international",
+   "msg": "ok: 10 requests, 15 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "news_rss",
+   "msg": "news_rss: 0 items in https://www.vroomkart.com/rss.xml"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "news_rss",
+   "msg": "news_rss: 0 items in https://www.vroomkart.it/rss.xml"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "news_rss",
+   "msg": "news_rss: near-miss (mentions Räikkönen, not Robin) 2026-11-12 Ilta-Sanomat: Kimi Räikkösen tulot paljastuivat"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "news_rss",
+   "msg": "news_rss: near-miss (mentions Räikkönen, not Robin) 2026-11-12 Iltalehti: Kimi Räikkösen tulot paljastuivat"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "news_rss",
+   "msg": "news_rss: near-miss (mentions Räikkönen, not Robin) 2026-11-12 SuomiF1: Kimi Antonelli Ferrarille? Nyt puhuu entinen F1-pomo"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "news_rss",
+   "msg": "news_rss: 22 feeds requested, 8 Robin items in feeds, 0 new"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "news_rss",
+   "msg": "ok: 23 requests, 25 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "rotax_ch",
+   "msg": "rotax_ch: 3 HTTP requests, 0 result rows"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "rotax_ch",
+   "msg": "ok: 3 requests, 7 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: no \"Risultati 2025\" page on rotaxmaxkart.it (nothing published for 2025)"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: \"Mini\" link 2026-RMCI-ITA-Castelletto-MIN.pdf contains MICRO results, not MINI (organiser upload error) - re-checked weekly"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: 7-Laghi Kart 2026-08-30: Robin not found in the 1 document(s) checked"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "rotax_italia",
+   "msg": "rotax_italia: 3 HTTP requests, 0 new result rows"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "rotax_italia",
+   "msg": "ok: 3 requests, 8 s, 0 news, 0 result rows"
+  },
+  {
+   "date": "2026-11-12",
+   "source": "wsk",
+   "msg": "wsk: 4 HTTP requests"
+  },
+  {
+   "date": "2026-11-12",
    "source": "wsk",
    "msg": "ok: 4 requests, 8 s, 0 news, 7 result rows"
   }
